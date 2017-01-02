@@ -1,0 +1,30 @@
+bufet
+cafeteria
+stolowka
+canteen
+klasa
+classroom
+sala komputerowa
+IT suite
+sala gimnastyczna
+gym
+hol
+hall
+gabinet dyrektora
+headmaster's office
+laboratorium
+laboratory
+biblioteka
+library
+szafka
+locker
+sekretariat
+office
+plac zabaw
+playground
+pracownia naukowa
+science lab
+boisko sportowe
+sports field
+pokoj nauczycielski
+staff room

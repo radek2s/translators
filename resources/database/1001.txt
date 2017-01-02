@@ -1,0 +1,110 @@
+lucznictwo
+archery
+baseball
+baseball
+boks
+boxing
+wyscigi samochodowe
+car racing
+uprawiac aerobik
+do aerobics
+uprawiac lekkoatletyke
+do athletics
+uprawiac sztuki walki
+do martial arts
+uprawiac joge
+do yoga
+rzut dyskiem
+discus
+robic pompki
+do push-ups
+robic przysiady
+do sit-ups
+szermierka
+fencing
+pilka nozna
+football
+grac w kregle
+go bowling
+uprawiac kolarstwo
+go cycling
+uprawiac kolarstwo gorskie
+go mountain biking
+uprawiac skoki narciarskie
+go ski jumping
+uprawiac jazde na nartach
+go skiing
+uprawiac plywanie
+go swimming
+uprawiac podnoszenie ciezarow
+go weightlifting
+golf
+golf
+gimnastyka
+gymnastics
+rzut mlotem
+hammer throwing
+skok wzwyz
+high jump
+skok w dal
+long jump
+hokej
+hockey
+wyscigi konne
+horse racing
+plotek
+hurdle
+oszczep
+javelin
+judo
+judo
+maraton
+marathon
+grac w koszykowke
+play basketball
+grac w brydza
+play bridge
+grac w rzutki
+play darts
+grac w pilke nozna
+play football
+grac w tenisa
+play tennis
+skok o tyczce
+pole vault
+uprawiac jakis sport
+do a sport
+jazda na wrotkach
+rollerskating
+bieg
+run
+zeglarstwo
+sailing
+lyzwiarstwo
+skating
+lyzwiarstwo figurowe
+ice skating
+jazda na deskorolce
+skateboarding
+indywidualne sporty
+individual sports
+sporty halowe
+indoor sports
+sporty zespolowe
+team sports
+sprint
+sprint
+tenis stolowy
+table tennis
+rzucac oszczepem
+throw the javelin
+trojskok
+triple jump
+siatkowka
+volleyball
+chod sportowy
+walking
+szermierka na wozkach
+wheelchair fencing
+zapasy
+wrestling

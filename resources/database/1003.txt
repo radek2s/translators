@@ -1,0 +1,60 @@
+lucznik
+archer
+sportowiec
+athlete
+bokser
+boxer
+mistrz
+champion
+trener
+coach
+nurek
+diver
+szermierz
+fencer
+pilkarz
+football player
+bramkarz
+goalkeeper
+gracz w golfa
+golfer
+gimnastyk
+gymnast
+biegacz przez plotki
+hurdler
+instruktor
+instructor
+maratonczyk
+marathon runner
+skoczek o tyczce
+pole-vaulter
+zawodowiec
+professional
+sedzia sporowy
+referee
+biegacz
+runner
+zdobywca drugiego miejsca
+runner-up
+narciarz
+skier
+skoczek
+ski-jumper
+widz
+spectator
+kobieta sportowiec
+sportswoman
+sprinter
+sprinter
+kibic
+fan
+plywak
+swimmer
+tenisista
+tenis player
+sedzia w tenisie
+umpire
+ciezarowiec
+weightlifter
+windsurfer
+windsurfer

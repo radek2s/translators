@@ -1,0 +1,30 @@
+ring bokserski
+boxing ring
+tor wyscigow konnych
+course
+pole golfowe
+course
+kort
+court
+kregielnia
+bowling alley
+boisko
+field
+sala gimnastyczna
+gym
+silownia
+gymnasium
+lodowisko
+ice rink
+boisko do pilki noznej
+pitch
+stok narciarski
+ski slope
+obiekty sportowe
+sports facilities
+basen
+swimming pool
+stadion
+stadium
+tor
+track

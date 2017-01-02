@@ -1,0 +1,30 @@
+plastyka
+art
+przedsiebiorczosc
+business studies
+informatyka
+information technology
+jezyki obce
+foreign languages
+geografia
+geography
+przedmioty humanistyczne
+humanities
+historia
+history
+matematyka
+mathematics
+muzyka
+music
+wychowanie fizyczne
+physical education
+religia
+religious education
+nauki spoleczne
+social sciences
+przedmioty szkolne
+subjects
+nieobowiazkowe przedmioty szkolne
+optional subjects
+obowiazkowe przedmioty szkolne
+mandatory subjects

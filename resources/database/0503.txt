@@ -1,0 +1,20 @@
+szef
+boss
+wspolpracownik
+collegue
+pracownik (e)
+employee
+pracownik (w)
+worker
+pracodawca
+employer
+pracownik na kierowniczym stanowisku
+executive
+praktykant
+intern
+kierownik
+manager
+persolnel
+staff
+zespol
+team

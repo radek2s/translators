@@ -1,0 +1,78 @@
+linia lotnicza
+airline
+przyjazd
+arrival
+wchodzic na poklad samolotu
+board a plane
+karta pokladowa
+boarding card
+zarezerwowac miejsce
+book a seat
+biznes klasa
+class business
+klasa ekonomiczna
+class economy
+personel pokladowy
+cabin crew
+przesiadac sie z pociagu na pociag
+change trains
+lot czarterowy
+charter flight
+zglaszac sie do odprawy
+check in
+stanowisko odprawy
+check-in desk
+odjazd
+departure
+poczekalnia
+departure lounge
+ekspres
+fast train
+oplata za przejazd
+fare
+lot
+flight
+bramka
+gate
+wysiadac z autobusu
+get off the bus
+wsiadac do pociagu
+get on the train
+bagaz podreczny
+hand luggage
+wyladowac
+land
+biuro rzeczy znalezionych
+left-luggage office
+bagaz
+luggage
+wozek bagazowy
+luggage trolley
+pasazer
+passenger
+peron kolejowy
+railway platform
+pas startowy
+runway
+wagon sypialny
+sleeping carriage
+walizka
+suitcase
+wystartowac o samolocie
+take off
+terminal
+terminal
+pociag bezposredni
+through train
+miesieczny bilet
+monthly ticket
+bilet okresowy
+period ticket
+bilet powrotny
+return ticket
+kasa biletowa
+ticket office
+rozklad jazdy
+timetable
+przedzial w pociagu
+train compartment

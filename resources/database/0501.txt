@@ -1,0 +1,106 @@
+pracownik naukowy
+academic
+ksiegowy
+accountant
+aktor
+actor
+aktorka
+actress
+kontroler ruchu lotniczego
+air traffic controller
+artysta
+artist
+opiekunka do dzieci (stala praca)
+au pair
+opiekunka do dzieci (praca dorywcza)
+babysitter
+fryzjer meski
+barber
+adwokat
+barrister
+taksowkarz
+taxi driver
+biznesman
+businessman
+mechanik samochodowy
+car mechanic
+kasjer
+cahsier
+szef kuchni
+chef
+programista komputerowy
+computer programmer
+dyrygent
+conductor
+kucharz
+cook
+instruktor nauki jazdy
+driving instructor
+elektryk
+electrician
+inzynier
+engineer
+pracownik fabryczny
+factory worker
+rolnik
+farmer
+strazak
+firefighter
+steward
+flight attendant
+gospodyni domowa
+housewife
+dekorator wnetrz
+interior designer
+tlumacz symultaniczny
+interpreter
+informatyk
+IT specialist
+dziennikarz
+journalist
+prawnik
+lawyer
+wykladowca
+lecturer
+bibliotekarz
+librarian
+gornik
+miner
+muzyk
+musician
+pielegniarka
+nurse
+aptekarz
+chemist
+pilot
+pilot
+policjant
+police officer
+listonosz
+postman
+psycholog
+psychologist
+recepcjonista
+receptionist
+pracownik sluzb oczyszczania miasta
+road sweeper
+przedstawiciel handlowy
+sales representative
+naukowiec
+scientist
+rzezbiarz
+sculptor
+sekretarz
+secretary
+pracownik ochrony
+security guard
+wlasciciel sklepu
+shopkeeper
+pracownik spoleczny
+social worker
+makler gieldowy
+stockbroker
+kontroler biletow
+ticket inspector
+tlumacz
+translator

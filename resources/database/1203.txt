@@ -1,0 +1,134 @@
+powyzej zera
+above zero
+ponizej zera
+below zero
+gololedz
+black ice
+bezchmurne niebo
+clear sky
+przejasniac sie
+clear up
+chlodny klimat
+cool climate
+suchy klimat
+dry climate
+ostry klimat
+harsh climate
+umiarkowany klimat
+moderate climate
+pochmurny
+cloudy
+stopnie Celsjusza
+degrees centigrade Celsius
+babie lato
+Indian summer
+meteorologia
+meteorology
+zachmurzony
+overcast
+cisnienie
+pressure
+temperatura
+temperature
+termometr
+thermometer
+cudowna pogoda
+gorgeous weather
+piekna pogoda
+lovely weather
+okropna pogoda
+terrible weather
+prognoza pogody
+weather forecast
+mapa pogody
+weather map
+prezenter pogody
+weather presenter
+pory roku
+seasons of the year
+jesien
+autumn
+wiosna
+spring
+lato
+summer
+zima
+winte
+chlodny
+cool
+jest zimno
+it's chilly
+jest mrozno
+it's freezing cold
+jest slisko
+it's slippery
+pada snieg
+it's snowy
+zamarzac
+freeze
+mroz
+frost
+lod
+ice
+lodowaty
+icy
+deszcz ze sniegiem
+sweet
+jest duszno
+it's close
+jest bardzo goraco
+it's boiling hot
+jest slonecznie
+it's sunny
+jest cieplo
+it's warm
+fala upalow
+heatwave
+wilgotny
+humid
+wilgotonosc
+humidity
+byc przemoczonym
+be soaking wet
+bryza
+breeze
+ulewa
+downpour
+mzawka
+drizzle
+mgla
+fog
+duzy deszcz
+heavy rain
+pada deszcz
+it's rainy
+mgielka
+mist
+kaluza
+puddle
+kropla deszczu
+raindrop
+opady deszczu
+rainfall
+przelotny deszcz
+shower
+mokry
+wet
+zamiec
+blizzard
+wiac
+blow
+huragan
+gale
+grad
+hail
+blyskawica
+lightning
+bezwietrzny
+still
+grzmot
+thunder
+burza z piorunami
+thunderstorm
+wietrzny
+windy

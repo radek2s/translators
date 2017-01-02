@@ -1,0 +1,310 @@
+mieso
+meat
+bekon
+bacon
+wolowina
+beef
+kurczak
+chicken
+dziczyzna
+game
+szynka
+ham
+jagniecina
+lamb
+watrobka
+liver
+mielone mieso
+minced meat
+wieprzowina
+pork
+drob
+poultry
+kielbasa
+sausage
+lekko podsmazony stek
+rare steak
+dobrze wysmazony stek
+well done steak
+indyk
+turkey
+cielecina
+veal
+ryby
+fish
+karp
+carp
+dorsz
+cod
+sledz
+herring
+losos
+salmon
+sardynki
+sardines
+owoce morza
+seafood
+skorupiaki
+shellfish
+pstrag
+trout
+tunczyk
+tuna
+produkty nabialowe
+dairy products
+maslo
+butter
+ostry ser
+mature cheese
+lagodny ser
+mild chesse
+serek do smarowania
+cheese spread
+twarozek
+cottage cheese
+smietana
+cream
+lody
+ice cream
+margaryna
+margarine
+tluste mleko
+full milk
+poltluste mleko
+semi-skimmed milk
+chude mleko
+skimmed milk
+kwasne mleko
+sour milk
+jogurt
+yogurt
+produkty zbozowe
+cereal products
+bialy chleb
+white bread
+platki zbozowe
+cereals
+rogalik
+croissant
+swiezy
+fresh
+makaron
+pasta
+ryz
+rice
+bulka
+roll
+czerstwy
+stale
+tost
+toast
+slodycze
+sweets
+ciasto z jablkami
+apple pie
+tort urodzinowy
+birthday cake
+ciasto
+cake
+sernik
+cheesecake
+ciasto z owocami
+friutcake
+makowiec
+poppy-seed cake
+napoje
+drinks
+napoj
+beverage
+kawa
+coffee
+cola
+coke
+sok
+juice
+herbata
+tea
+gazowana woda
+sparking water
+niegazowana woda
+still water
+wino
+wine
+owoce
+fruit
+jablko
+apple
+morela
+apricot
+banan
+banana
+czarna porzeczka
+blackberry
+jagoda
+blueberry
+kokos
+coconut
+winogrono
+grape
+grejfrut
+grapefruit
+cytryna
+lemon
+limonka
+lime
+melon
+melon
+pomarancza
+orange
+brzoskwinia
+peach
+gruszka
+pear
+ananas
+pineapple
+sliwka
+plum
+malina
+raspberry
+truskawka
+strawberry
+arbuz
+watermelon
+warzywa
+vegeables
+szparagi
+asparagus
+baklazan
+aubergine
+burak
+beetroot
+brokuly
+broccoli
+kapusta
+cabbage
+marchew
+carrot
+kalafior
+cauliflower
+seler
+celeriac
+cukinia
+courgette
+ogorek
+cucumber
+koper
+dill
+czosnek
+garlic
+zabek czosnku
+garlic clove
+groszek
+green beans
+por
+leek
+salata
+lettuce
+grzyby
+mushrooms
+cebula
+onion
+papryka
+pepper
+ziemniak
+potato
+rzodkiewka
+radish
+szpinak
+spinach
+kukurydza
+sweetcorn
+pomidor
+tomato
+kalarepa
+turnip
+dodatki do zywnosci
+things added to food
+keczup
+ketchup
+majonez
+mayonnaise
+musztarda
+mustard
+pieprz
+pepper
+sos do salatek
+salad dressing
+sol
+salt
+przyprawy
+spices
+cukier
+sugar
+ocet
+vinegar
+ziola
+herbs
+bazylia
+basil
+mieta
+mint
+natka pietruszki
+parsley
+rozmaryn
+rosemary
+tymianek
+thyme
+porcje zywnosci
+quantities of food
+torebka maki
+bag of flour
+butelka soku
+bottle of juice
+pudelko czekoladek
+box of chocolates
+puszka lemoniady
+can of lemonade
+torba na zakupy
+carrier bag
+karton soku pomaranczowego
+carton of orange juice
+sloik dzemu
+jar of jam
+bochenek chleba
+loaf of bread
+paczka herbatnikow
+packet of biscuits
+lyzeczka cukru
+spoonful of sugar
+puszka sardynek
+tin of sardines
+kostka margaryny
+tub of margarine
+zastawa stolowa i sprzet do gotowania
+tableware and cookware
+miska
+bowl
+paleczki
+chopsticks
+garnek uniwerslany
+cooking pot
+filizanka
+cup
+widelec
+fork
+patelnia
+frying pan
+szklanka
+glass
+noz
+knife
+pokrywka
+lid
+rondel
+pan
+talerz
+plate
+lyzka
+spoon
+obrus
+table cloth

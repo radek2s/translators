@@ -1,0 +1,158 @@
+aresztowac
+arrest
+podpalenie
+arson
+podpalacz
+arsonist
+napad
+assault
+zaatakowac kogos nozem
+attack sb with a knife
+szanataz
+blackmail
+zlamac prawo
+break the law
+wlamywac sie
+burgle
+kradziez z wlamaniem
+burglary
+wlamywacz
+burglar
+popelnic przestepstwo
+commit a crime
+handel narkotykami
+drug dealing
+pijany kierowca
+drunk driver
+dowody
+evidence
+pseudokibic
+football hooligan
+falszowac
+forge
+falszerstwo
+forgery
+falszerz
+forger
+oszustwo
+fraud
+oszust
+fraudster
+miec alibi
+have an alibi
+porwac samolot
+hijack
+porywacz samolotu
+hijacker
+prowadzic dochodzenie
+investigate
+dochodzenie
+investigation
+trzymac kogos w areszcie
+keep sb in custody
+porywacz
+kidnaper
+porwanie
+kidnapping
+porywac
+kidnap
+mniejsze wykroczenie
+minor offence
+napad uliczny
+mugging
+bandyta uliczny
+mugger
+morderstwo
+murder
+drobne wykroczenie
+petty crime
+kradziez kieszonkowa
+pickpocketing
+posterunek policji
+police station
+zgwalcic
+rape
+gwalciciel
+rapist
+napad
+robbery
+zlodziej
+robber
+kradziez w sklepie
+shoplifting
+przemyt
+smuggling
+przemytnik
+smuggler
+przemycac
+smuggle
+krasc
+steal
+podejrzany
+suspect
+brac lapowke
+take a bribe
+terroryzm
+terrorism
+kradziez
+theft
+zlodziej
+thief
+ofiara
+victim
+przemoc
+violetce
+swiadek
+witness
+oglosic wyrok
+announce the verdict
+zostac oskarzonym o cos
+be charged with sth
+kara smierci
+capital punishment
+praca spoleczna
+community service
+przyznawac sie do czegos
+confess to sth
+uznac kogos winnym popelnienia jakiegos przestepstwa
+convict sb of a crime
+kara cielesna
+corporal punishment
+sprawa w sadzie
+court case
+uznac kogos winnym czegos
+find sb guilty of
+placic grzywne
+pay a fine
+dostac mandat
+get a fine
+ujsc na sucho
+get away with sth
+surowa kara
+harsh punishment
+niewinny
+innocent
+sedzia
+judge
+lawa przysieglych
+jury
+smiertelny zastrzyk
+lethal injection
+kara dozywocia
+life impirsonment
+kara wiezienia
+pirson sentence
+ukarac
+punish
+wyrok
+sentence
+skazac kogos na cos
+sentence sb to sth
+wyrok w zawieszeniu
+suspended sentence
+podac kogos do sadu
+take sb to court
+mandat
+traffic ticket
+miec proces
+go on trial

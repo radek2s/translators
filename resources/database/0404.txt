@@ -1,0 +1,106 @@
+znajomy
+acquaintance
+dziecko adoptowane
+adopted child
+ciocia
+aunty
+najlepszy przyjaciel
+best friend
+chlopak
+boyfriend
+brat
+brother
+dzieci
+children
+bliski przyjaciel
+close friend
+kuzyn
+cousin
+corka
+daughter
+synowa
+daughter-in-law
+byly chlopak
+ex-boyfriend
+byla dziewczyna
+ex-girlfriend
+byly maz
+ex-husband
+byla zona
+ex-wife
+ojciec
+father
+tato
+dad
+tatus
+daddy
+tesc
+father-in-law
+narzeczony
+fiance
+narzeczona
+fiancee
+przybrane dzieci
+foster children
+dziewczyna
+girlfriend
+dziadek
+grandfather
+babcia
+grandmother
+dziadkowie
+grandparents
+przyrodni brat
+half-brother
+przyrodnia siostra
+half-sister
+maz
+husband
+tesciowie
+in-laws
+malzenstwo (para)
+married couple
+matka
+mother
+tesiowa
+mother-in-law
+bratanek
+nephew
+bratanica
+niece
+potomstwo
+offspring
+jedynak
+only child
+rodzice
+parents
+krewny
+relative
+niepelna rodzina
+single-parent family
+siostra
+sister
+bratowa
+sister-in-law
+syn
+son
+ziec
+son-in-law
+wspolmalzonek
+spouse
+pasierbica
+stepdaughter
+ojczym
+stepfather
+macocha
+stepmother
+pasierb
+stepson
+trojaczki
+triplets
+blizniaki
+twins
+wujek
+uncle
+zona
+wife

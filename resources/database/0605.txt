@@ -1,0 +1,68 @@
+samolot
+plane
+przybyc do
+arrive in
+rower
+bike
+lodz
+boat
+autobus
+bus
+samochod
+car
+zlapac samolot
+catch a flight
+autokar
+coach
+odjechac
+depart form
+autobus piektrowy
+double decker bus
+prom
+ferry
+latac
+fly
+podrozowac koleja
+travel by rail
+podrozowac droga morska
+travel by sea
+podrozowac droga powietrzna
+travel by air
+jechac pociagiem
+go by train
+podrozowac samolotem
+travel by plane
+podwozic kogos
+give sb a lift
+miec dobra podroz
+have a good trip
+podrozowac autostopem
+hitchhike
+ciezarowka
+lorry
+mikrobus
+minibus
+motocykl
+motorcycle
+jechac rowerem
+ride a bike
+jechac na wielbladzie
+ride a camel
+odprowadzac kogos
+see sb off
+wyruszac do jakiegos miejsca
+set off
+pojechac na przejazdzke
+go for a ride
+taksowka
+taxi
+pociag
+train
+metro
+underground
+furgonetka
+van
+isc piechota
+walk
+zaglowka
+yacht

@@ -1,0 +1,54 @@
+granica panstwa
+border
+granica wewnatrz panstwa
+boundary
+obywatel
+citizen
+obywatelstwo
+citizenship
+dyktatura
+dictatorship
+dyktator
+dictator
+emigrowac
+emigrate
+emigracja
+emigration
+obcokrajowiec
+foreigner
+ojczyzna
+homeland
+imigracja
+immigration
+polityka imigracyjna
+imigration policy
+niepodleglosc
+independence
+mieszkaniec
+inhabitant
+krolestwo
+kingdom
+monarchia
+monarchy
+narod
+nation
+narodowosc
+nationality
+hymn narodowy
+national anthem
+flaga narodowa
+national flag
+azyl polityczny
+political asylum
+liczba ludnosci
+population
+uchodzca
+refugee
+region
+region
+republika
+republic
+rodzina krolewska
+royal family
+stan
+state

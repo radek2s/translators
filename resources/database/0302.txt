@@ -1,0 +1,256 @@
+apartament
+apartment
+kawalerka
+bedsit
+blok mieszkalny
+block of flats
+dom parterowy
+bungalow
+domek letniskowy
+chalet
+domek wiejski
+cottage
+dom wolnostojacy
+detached house
+dom w gospodarstwie rolnym
+farmhouse
+rezydencja
+mansion
+palac
+palace
+mieszkanie na ostatnim pietrze wiezowca
+penthouse
+blizniak
+semi-detached house
+drapacz chmur
+skyscraper
+dom szeregowy
+terraced house
+wiezowiec
+tower block
+willa
+villa
+zasmiecony
+cluttered
+wygodny
+comfortable
+przytulny
+cosy
+ciasny
+cramped
+wilgotny
+damp
+zniszczony
+dilapidated
+ogromny
+enormous
+imponujacy
+impressive
+w dobrym stanie
+in good condition
+luksusowy
+luxurious
+oryginalny wystroj
+original design
+cicha okolica
+peaceful location
+z drugiej reki
+second-hand
+przestronny
+spacious
+sloneczna kuchnia
+sunlit kitchen
+malutki
+tiny
+drewniana podloga
+wooden floors
+okolica wiejska
+countryside
+dzielnica
+district
+miasto rodzinne
+home town
+w miescie
+in the city
+na przedmiesciach
+in the suburbs
+na wsi
+in the country
+strefa przemys³owa
+industrial zone
+centrum miasta
+inner city
+sasiad
+neighbour
+peryferie
+outskirts
+mieszkaniec
+resident
+wiejski
+rural
+slumsy
+slums
+miasto
+town
+miejski
+urban
+wies
+village
+strych
+attic
+balkon
+balcony
+piwnica (b)
+basement
+sufit
+ceiling
+piwnica (c)
+cellar
+komin
+chimney
+na dole
+downstairs
+podjazd
+drive
+plot
+fence
+pietro
+floor
+garaz
+garage
+dobrze utrzymany ogrod
+well-kept garden
+skrzynka na listy
+letter box
+poddasze
+loft
+dach
+roof
+okiennice
+shutters
+klatka schodowa
+staircase
+schody
+stairs
+taras
+terrace
+na gorze
+upstairs
+lazienka
+bathroom
+wanna
+bath
+lustro
+mirror
+prysznic
+shower
+mydlo
+soap
+kran
+tap
+sedes
+toilet
+szczoteczka do zebow
+toothbrush
+wieszak na reczniki
+towel rail
+umywalka
+washbasin
+pralka
+washing machine
+sypialnia
+bedroom
+lozko
+bed
+stolik nocny
+bedside table
+koc
+blanket
+polka na ksiazki
+book shelf
+krzeslo
+chair
+komoda
+chest of drawers
+toaletka
+dressing table
+koldra
+duvet
+lampa
+lamp
+poduska
+pillow
+dywanik
+rug
+przescieradlo
+sweet
+szafa
+wardrobe
+salon
+living room
+fotel
+armchair
+biblioteczka
+bookcase
+lawa
+coffee table
+kominek
+fireplace
+meble
+furniture
+kanapa
+sofa
+kuchnia
+kitchen
+kuchenka
+cooker
+regal kuchenny
+cupboard
+zmywarka do naczyn
+dishwasher
+suszarka do naczyn
+draining board
+zamrazarka
+freezer
+lodowka
+fridge
+stol kuchenny
+kitchen table
+czajnik
+kettle
+kuchenka mikrofalowa
+microwave oven
+piekarnik
+oven
+zlew
+sink
+korytarz
+hall
+dzwonek u drzwi
+doorbell
+wycieraczka do butow
+doormat
+jadalnia
+dining room
+gabiet
+study
+zaluzja
+blind
+dywan
+carpet
+centralne ogrzewanie
+central heating
+zaslona
+curtain
+firanka
+net curtain
+grzejnik
+radiator
+biezaca woda
+running water
+odkurzacz
+vacuum cleaner
+dobrze wyposarzony
+well-equipped
+parapet okienny
+window sill

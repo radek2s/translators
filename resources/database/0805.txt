@@ -1,0 +1,180 @@
+ogolny wyglad
+overall look
+artakcyjny
+attractive
+piekny
+beautiful
+zwyczajny
+casual
+przystojny
+good-looking
+przystojny mezczyzna
+handsome man
+ladny
+pretty
+niechlujny
+scruffy
+elegancki
+elegant
+brzydki
+ugly
+nieatrakcyjny
+unattractive
+wiek
+age
+starsza pani
+elderly lady
+troche ponad 20 lat
+in his early twenties
+przed 50
+in his late forties
+okolo 35 lat
+in his mid-thirties
+w srednim wieku
+middle-aged
+stary
+old
+nastolatek
+teenage boy
+dziecko raczkujace
+toddler
+mlody
+young
+pochodzenie etniczne
+ethnic origin
+azjatycki
+Asian
+czarnoskory
+black
+kaukaski
+Caucasian
+bialy
+white
+wzrost
+height
+sredniego wzrostu
+average height
+niski
+short
+wysoki
+tall
+budowa ciala
+general build
+wysportowany
+athletic
+pucolowaty
+chubby
+przysadzisty
+chunky
+gruby
+fat
+miec dobra figure
+have a good figure
+otyly
+obese
+z nadwaga
+overweight
+pulchny
+plump
+bardzo chudy
+skinny
+szczuply
+slim
+przysadzisty
+stocky
+chudy
+thin
+dobrze zbudowany
+well-built
+wlosy
+hair
+kok
+bun
+grzywka
+fringe
+lysiec
+go bald
+wlosy
+hair
+jasne wlosy
+blonde hair
+krecone wlosy
+curly hair
+ciemne wlosy
+dark hair
+farbowane wlosy
+dyed hair
+rude wlosy
+ginger hair
+sredniej dlugosci wlosy
+medium length hair
+wlosy do ramion
+shoulder length hair
+proste wlosy
+straight hair
+grube wlosy
+thick hair
+cienkie wlosy
+thin hair
+falujace wlosy
+wavy hair
+siwe wlosy
+white hair
+ostrzyc sie
+have a haircut
+przedialek
+parting
+nosic warkocze
+wear one's hair in plaits
+nosic kucyk
+wear one's hair in a pony-tail
+twarz
+face
+broda
+beard
+znamie
+birthmark
+krzaczaste brwi
+bushy eyebrows
+kosci policzkowe
+cheekbones
+gladko ogolony
+clean-shaven
+cera
+complexion
+ciemna cera
+dark complexion
+jasna cera
+fair complexion
+blada cera
+pale complexion
+opalona cera
+tanned complexion
+cechy szczegolne
+distinguishing features
+oczy
+eyes
+blyszczace oczy
+bright eyes
+niebieskie oczy
+blue eyes
+pelne wyrazu oczy
+expressive eyes
+piegi
+freckles
+wasy
+moustache
+nos
+nose
+splaszczony nos
+flat nose
+szpiczasty nos
+pointed nose
+zadarty nos
+snub nose
+blizna
+scar
+tatuaz
+tattoo
+zmarszczki
+wrinkles

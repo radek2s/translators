@@ -1,0 +1,50 @@
+wiek
+age
+obywatel
+citizen
+data urodzenia
+date of birth
+pochodzenie etniczne
+ethnic origin
+plec zenska
+female
+imie
+first name
+zawod
+profession
+plec meska
+male
+mezczyzna
+man
+mezczyzni
+men
+narodowosc
+nationality
+czlowiek
+person
+miejsce urodzenia
+place of birth
+plec (G)
+gender
+plec (S)
+sex
+nazwisko
+last name
+kobieta
+woman
+stan cywilny
+marital status
+rozwiedziony
+divorced
+zonaty
+married
+w separacji
+separated
+wolny
+single
+niezonaty
+unmarried
+wdowa
+widow
+wdowiec
+widower

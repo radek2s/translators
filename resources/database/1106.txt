@@ -1,0 +1,288 @@
+analiza
+analysis
+analizy
+analyses
+analizowac wyniki
+analyze results
+dziedzina badawcza
+area of research
+wzor matematyczny
+mathematical formula
+przeprowadzic eksperymenty
+carry out experiments
+definicja
+definition
+rozwinac teorie
+develop a theory
+przeprowadzic badania dotyczace czegos
+do research into sth
+pierwastek
+element
+energia
+energy
+dowod
+evidence
+dowiadywac sie o czyms
+find out about sth
+wnioski
+findings
+sformulowac
+formulate
+przyciaganie ziemskie
+gravity
+hipoteza
+hypothesis
+wskazywac
+indicate
+badac
+investigate
+interpretowac dane
+interpret data
+zasady dynamiki
+laws of motion
+obserwowac przedmiot
+observe an object
+tlen
+oxygen
+dowiesc czegos droga eksperymentalna
+prove sth by experiments
+laboratorium badawcze
+research laboratory
+instytut
+institute
+badacz
+researcher
+wyniki
+results
+probka
+sample
+teoria naukowa
+scientific theory
+wykazywac
+show
+badanie czegos
+study of sth
+badac wszechswiat
+study the universe
+sugerowac
+suggest
+probowka
+test tube
+antropologia
+antropology
+arecheologia
+archeology
+astrologia
+astrology
+astrofizyka
+astrophysics
+biologia
+biology
+biolog
+biologist
+biotechnologia
+biotechnology
+chemia
+chemistry
+informatyka
+computer science
+ekonomia
+economics
+inzynieria
+engineering
+genetyka
+genetics
+przetwarzanie informacji
+information processing
+lingwistyka
+linguistics
+matematyka
+mathematics
+fizyka
+physics
+politologia
+political science
+psychologia
+psychology
+robotyka
+robotics
+zabezpieczenie antywirusowe
+anti-virus protection
+byc odlaczonym od sieci
+be offline
+byc podlaczonym do sieci
+be online
+stale lacze
+broadband
+blad
+bug
+kliknac link
+click on the link
+program
+programme
+kursor
+cursor
+baza danych
+database
+sciagnac plik na swoj komputer
+download a file onto your computer
+darmowe oprogramowanie
+fre software
+wyszukiwac w przegladarce wyrazenie
+google a phrase
+wlamywac sie do czyjegos komputera
+hack into sb's computer
+dysk twardy
+hard disk
+wlozyc plyte CD-ROM
+insert a CD-ROM
+klawiatura
+keyboard
+wylogowac sie
+log off
+zalogowac sie
+log on
+zrobic wydruk komputerowy
+make a computer printout
+monitor
+monitor
+myszka
+mouse
+komputer osobisty
+personal computer
+drukarka
+printer
+zachowywac prace na nosniku pamieci usb
+save work onto a memory stick
+przegladac internet
+search the internet
+serwisy spolecznosciowe
+social networking site
+surfowac w sieci
+surf the net
+zaladowac plik wideo z komputera
+upload videos from your computer
+korzystac z wyszukiwarki internetowej
+use a search engine
+konstruktor
+constructor
+skonstuowac maszyne
+construct a machine
+odkryca
+discoverer
+odkryc lekarstow na cos
+discover a cure for sth
+sporzadzic projekt urzadenia
+design plans of a device
+wykonac eksperyment
+preform an experiment
+eksperyment na czyms
+experiment on
+eksperyment z czyms
+experiment with
+znalezc inspiracje do czegos
+find inspiration for sth
+zainspirowac
+inspire
+wynalazca
+inventor
+wynalezc jakies urzadenie
+invent a machine
+patent
+patent
+opatentowac produkt
+patent a product
+antena
+aerial
+ikona aplikacji
+application icon
+bateria
+battery
+nowiutki
+brand new
+zepsuc sie
+break down
+ladowarka
+charger
+zmieniac bieg
+change gear
+podlaczyc kabel
+connect the wire
+awaria
+crash
+krztusic sie (o silniku)
+cough
+obudowa
+cover
+elektryczne urzadzenie
+electrical device
+technologicznie zaawansowane urzadzenie
+high-tech device
+przenosne urzadenie
+portable device
+aparat cyfrowy
+digital camera
+przenosny odtwarzacz CD
+Discman
+urzadenia domowe
+domestic appliance
+odtwarzacz DVD
+DVD
+zrodlo pradu
+electricity supply
+lampa blyskowa
+flash
+przerwac sie (polaczenie)
+go dead
+wyczerpac sie
+go flat
+przydatny gadzet
+handy gadget
+zestaw glosnomowiacy
+headset
+wyswietlacz LCD
+LCD screen
+mechaniczne wskazowki zegara
+mechanical hands
+telefon komorkowy
+mobile phone
+odtwarzacz MP4
+MP4 player
+pasek na szyje
+neck strap
+przycisk
+button
+zepsuty (winda)
+out of order
+przeczytac instukcje obslugi
+read the manual
+przycisk start
+play button
+ptyczka
+plug
+wlaczyc cos do kontaktu
+plug sth in
+wcisnac prycisk
+press the button
+wkladac baterie
+put in batteries
+wlozyc sluchawki
+put on the headphones
+uzywany
+second-hand
+karta sim
+SIM card
+kontakt
+socket
+zasilany bateirami slonecznymi
+solar-powered
+uruchomic silnik
+star up the engine
+ekran dotykowy
+touch screen
+obiektyw
+zoom lens
+wlaczyc
+switch on
+wylaczyc
+switch off
