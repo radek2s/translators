@@ -1,5 +1,6 @@
 package gui.game;
 
+import gui.IEngPanels;
 import gui.customcomponents.ELabel;
 import gui.customcomponents.EPanel;
 import gui.MainFrame;
@@ -11,52 +12,26 @@ import java.awt.*;
 /**
  * Game Progress Panel creates panel with game progress
  *
- * @version 1.0
+ * @version 1.1
  * @author Radosław Jajko
  *
  * Created 11.12.2016
- * Updated 02.01.2016
+ * Updated 03.01.2016
  */
 
-public class GameProgressPanel extends EPanel {
+public class GameProgressPanel extends EPanel implements IEngPanels{
 
-    ELabel lUsername;
-    ELabel lPoints;
-    JProgressBar progressBar;
+    private ELabel lUsername;
+    private ELabel lPoints;
+    private JProgressBar progressBar;
 
-    ELabel lWasCorrect;
-    ELabel lLastCorrect;
-    ELabel lLastAnswer;
+    private ELabel lWasCorrect;
+    private ELabel lLastCorrect;
+    private ELabel lLastAnswer;
 
     public GameProgressPanel(){
 
-        EPanel mainPanel = new EPanel(new GridLayout(0,1));
-
-        EPanel statusPanel = new EPanel(new GridLayout(0,1));
-        statusPanel.setBorder(new BevelBorder(BevelBorder.RAISED));
-        statusPanel.setPreferredSize(new Dimension(100,60));
-        statusPanel.setAlignmentY(TOP_ALIGNMENT);
-
-
-        lUsername   = new ELabel();
-        lUsername.setHorizontalAlignment(SwingConstants.CENTER);
-        lUsername.setFont(new Font("Arial",Font.BOLD,11));
-        lPoints     = new ELabel();
-        lPoints.setHorizontalAlignment(SwingConstants.CENTER);
-        progressBar = new JProgressBar();
-        progressBar.setMinimum(0);
-        progressBar.setMaximum(5);
-        progressBar.setStringPainted(true);
-
-
-        statusPanel.add(lUsername);
-        statusPanel.add(lPoints);
-        statusPanel.add(progressBar);
-
-        mainPanel.add(statusPanel);
-        mainPanel.add(lastAnswerPanel());
-
-        this.add(mainPanel,CENTER_ALIGNMENT);
+        createAndShowGUI();
 
     }
 
@@ -89,6 +64,9 @@ public class GameProgressPanel extends EPanel {
 
     public void setWasCorrect(boolean wasCorrect){
 
+        if ( !lWasCorrect.isVisible() ){
+            lWasCorrect.setVisible(true);
+        }
         if(wasCorrect){
             lWasCorrect.setText("Correct!");
             lWasCorrect.setFont(new Font("Arial", Font.BOLD, 13));
@@ -105,7 +83,9 @@ public class GameProgressPanel extends EPanel {
 
     }
 
-    public void setProgresPanel(String username, int duration, int i){
+    public void setProgressPanel(String username, int duration, int i){
+        duration    = ++duration;
+        i           = ++i;
         String label = i + "/" + duration;
         lUsername.setText(username);
         progressBar.setMaximum(duration);
@@ -113,8 +93,58 @@ public class GameProgressPanel extends EPanel {
     }
 
     public void setPoints(int points, int duration) {
+        duration= ++duration;
         lPoints.setText(points+"/"+ MainFrame.getCore().getDuration());
         progressBar.setValue(duration);
     }
-    
+
+    public void hideLastAnswers(){
+
+        lWasCorrect.setVisible(false);
+        lLastAnswer.setVisible(false);
+        lLastCorrect.setVisible(false);
+    }
+
+    @Override
+    public void createAndShowGUI() {
+
+        EPanel mainPanel = new EPanel(new GridLayout(0,1));
+
+        EPanel statusPanel = new EPanel(new GridLayout(0,1));
+        statusPanel.setBorder(new BevelBorder(BevelBorder.RAISED));
+        statusPanel.setPreferredSize(new Dimension(100,60));
+        statusPanel.setAlignmentY(TOP_ALIGNMENT);
+        statusPanel.setSize(100,60);
+
+
+        lUsername   = new ELabel();
+        lUsername.setHorizontalAlignment(SwingConstants.CENTER);
+        lUsername.setFont(new Font("Arial",Font.BOLD,11));
+        lPoints     = new ELabel();
+        lPoints.setHorizontalAlignment(SwingConstants.CENTER);
+        progressBar = new JProgressBar();
+        progressBar.setMinimum(0);
+        progressBar.setMaximum(5);
+        progressBar.setStringPainted(true);
+
+
+        statusPanel.add(lUsername);
+        statusPanel.add(lPoints);
+        statusPanel.add(progressBar);
+
+        mainPanel.add(statusPanel);
+        mainPanel.add(lastAnswerPanel());
+
+        this.add(mainPanel,CENTER_ALIGNMENT);
+
+    }
+
+    @Override
+    public void initializeGUI() {
+
+        lUsername.setText(MainFrame.getCore().getActiveUser().getUsername());
+        progressBar.setMaximum(MainFrame.getCore().getDuration());
+        setPoints(0,MainFrame.getCore().getDuration());
+
+    }
 }
