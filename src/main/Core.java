@@ -1,5 +1,7 @@
 package main;
 
+import gui.MainFrame;
+
 import java.io.*;
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -16,7 +18,7 @@ import java.util.Random;
  * @author Radosław Jajko
  *
  * Created 21.12.2016
- * Updated 03.01.2017
+ * Updated 04.01.2017
  */
 public class Core implements ICore, Serializable{
 
@@ -160,6 +162,40 @@ public class Core implements ICore, Serializable{
                 }
             }
         }
+    }
+
+    @Override
+    public void loadCustomData(String path){
+
+        LinkedList<String> words1 = new LinkedList<>();
+        LinkedList<String> words2 = new LinkedList<>();
+
+        try {
+
+            BufferedReader bufferedReader = new BufferedReader(new FileReader(new File(path)));
+            String line = bufferedReader.readLine();
+            int i=0;
+
+            while (line != null){
+                if (i == 0){
+                    words1.add(line);
+                    i++;
+                } else {
+                    words2.add(line);
+                    i=0;
+                }
+                line = bufferedReader.readLine();
+            }
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        if (words1.size() != 0 && words2.size() != 0){
+            activeQuestionSet = new Question(words1,words2);
+        }
+
+
     }
 
     @Override

@@ -34,11 +34,6 @@ public class Question implements Serializable{
 
     }
 
-
-    public boolean isCorrect(String answer, int index){
-        return answer.equalsIgnoreCase(words2.get(index));
-    }
-
     public String getWord1(int index){
         return words1.get(index);
     }
@@ -50,6 +45,23 @@ public class Question implements Serializable{
     public int getMaxSize(){
         return words1.size();
     }
+
+    public boolean isCorrect(String answer, int index){
+        return answer.equalsIgnoreCase(words2.get(index));
+    }
+
+    public void addNextSet(Question question){
+
+        this.words1.addAll(question.words1);
+        this.words2.addAll(question.words2);
+
+    }
+
+    public void clearWords(){
+        this.words1.clear();
+        this.words2.clear();
+    }
+
 
     }
 
