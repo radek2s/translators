@@ -7,12 +7,19 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 /**
- * Created by radek_000 on 04.01.2017.
+ * Class which create new expanded Question which contains more
+ * than one simple question.
+ *
+ * @version 1.1
+ * @author Radosław Jajko
+ *
+ * created 04.01.2017
+ * updated --.--.----
  */
 public class AllQuestionsSetListener implements ActionListener {
 
     private int index;
-    Question expandedQuestion;
+    private Question expandedQuestion;
 
     public AllQuestionsSetListener(int i){
 

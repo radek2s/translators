@@ -8,6 +8,10 @@ import java.awt.event.ActionListener;
 import java.io.File;
 
 /**
+ * Class which allows user to load custom questions
+ * Creates JFileChooser and loads absolute path
+ * of selected file
+ *
  * @version 1.1
  * @author Radosław Jajko
  *

@@ -3,6 +3,7 @@ package gui.user;
 import controller.BackButtonListener;
 import controller.UserPanelController.AddButtonListener;
 import controller.UserPanelController.DeleteButtonListener;
+import controller.UserPanelController.UserModelListener;
 import gui.customcomponents.EButton;
 import gui.customcomponents.ELabel;
 import gui.customcomponents.EPanel;
@@ -22,14 +23,14 @@ import java.util.Date;
  * UserPanel creates panel to choose/add/delete user
  * In this panel possible is level and score check
  *
- * @version 1.0
+ * @version 1.1
  * @author Radosław Jajko
  *
  * Created 14.12.2016
- * Updated 02.01.2016
+ * Updated 04.01.2016
  */
 
-public class UserPanel extends EPanel implements ListSelectionListener {
+public class UserPanel extends EPanel implements ListSelectionListener, UserModelListener {
 
     private JList list;
 
@@ -149,8 +150,10 @@ public class UserPanel extends EPanel implements ListSelectionListener {
 
         bSetUSer.addActionListener(e -> {
 
+            MainFrame.getCore().getActiveUser().unsubscribe(this);
             MainFrame.getCore().setActiveUser(MainFrame.getCore().getUsers().get(list.getSelectedIndex()));
             MainFrame.getCore().getActiveUser().setLastActive(new Date());
+            MainFrame.getCore().getActiveUser().subscribe(this);
             tfActiveUser.setText(MainFrame.getCore().getActiveUser().getUsername());
         });
 
@@ -188,6 +191,7 @@ public class UserPanel extends EPanel implements ListSelectionListener {
         }
 
         list.updateUI();
+        MainFrame.getCore().getActiveUser().subscribe(this);
         tfUsername.setText(MainFrame.getCore().getActiveUser().getUsername());
         tfScore.setText(String.valueOf(MainFrame.getCore().getActiveUser().getLevel().getScore()));
         tfLevel.setText(MainFrame.getCore().getActiveUser().getLevel().getCurrentLevel());
@@ -200,6 +204,8 @@ public class UserPanel extends EPanel implements ListSelectionListener {
     public void valueChanged(ListSelectionEvent e) {
 
         try {
+
+
             tfUsername.setText(MainFrame.getCore().getUsers().get(list.getSelectedIndex()).getUsername());
             tfLastActivity.setText(dateFormat.format(MainFrame.getCore().getUsers().get(list.getSelectedIndex()).getLastActive()));
             tfLevel.setText(MainFrame.getCore().getUsers().get(list.getSelectedIndex()).getLevel().getCurrentLevel());
@@ -209,4 +215,12 @@ public class UserPanel extends EPanel implements ListSelectionListener {
         }
 
         }
+
+    @Override
+    public void userChanged() {
+
+        tfScore.setText(String.valueOf(MainFrame.getCore().getActiveUser().getLevel().getScore()));
+        tfLevel.setText(MainFrame.getCore().getActiveUser().getLevel().getCurrentLevel());
+
+    }
 }

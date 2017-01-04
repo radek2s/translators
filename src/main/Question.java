@@ -11,7 +11,7 @@ import java.util.LinkedList;
  * @author Radosław Jajko
  *
  * Created 10.12.2016
- * Updated 03.01.2017
+ * Updated 04.01.2017
  */
 
 public class Question implements Serializable{
@@ -55,11 +55,6 @@ public class Question implements Serializable{
         this.words1.addAll(question.words1);
         this.words2.addAll(question.words2);
 
-    }
-
-    public void clearWords(){
-        this.words1.clear();
-        this.words2.clear();
     }
 
 

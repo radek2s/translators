@@ -1,5 +1,8 @@
 package main;
 
+import controller.UserPanelController.Observable;
+import controller.UserPanelController.UserModelListener;
+
 import java.io.Serializable;
 import java.util.Date;
 import java.util.HashMap;
@@ -9,20 +12,22 @@ import java.util.Map;
  * User class
  * Describing simple attributes of simple user
  *
- * @version 1.0
+ * @version 1.1
  * @author Radosław Jajko
  *
  * Created 10.12.2016
- * Updated 02.01.2017
+ * Updated 04.01.2017
  */
 
-public class User implements Serializable{
+public class User implements Serializable , Observable{
 
     private String username;
     private int lastScore;
     private Date lastActive;
     private Level level;
     private Map<Date, Integer> bestScores;
+
+    private UserModelListener listener;
 
     public User(String username){
         this.username = username;
@@ -36,16 +41,13 @@ public class User implements Serializable{
         return username;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
-    }
-
     public int getLastScore() {
         return lastScore;
     }
 
     public void setLastScore(int lastScore) {
         this.lastScore = lastScore;
+        modelChanged();
     }
 
     public Date getLastActive() { return lastActive; }
@@ -56,13 +58,29 @@ public class User implements Serializable{
         return level;
     }
 
-    public void setLevel(Level level) {
-        this.level = level;
-    }
-
     public Map getBestScores(){
         return bestScores;
     }
 
+    /**
+     * ModelChanged method base on the Observer pattern
+     * when last score has changed inform listeners
+     * that userChanged
+     */
 
+    private void modelChanged(){
+        if ( listener != null ){
+            listener.userChanged();
+        }
+    }
+
+    @Override
+    public void subscribe(UserModelListener l) {
+        listener = l;
+    }
+
+    @Override
+    public void unsubscribe(UserModelListener l) {
+        listener = null;
+    }
 }
