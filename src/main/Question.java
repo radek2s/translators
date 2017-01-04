@@ -1,42 +1,62 @@
 package main;
 
 import java.io.Serializable;
+import java.util.LinkedList;
 
 /**
  * Question class
  * Class to create simple question
  *
- * @version 1.0
+ * @version 1.1
  * @author Radosław Jajko
  *
  * Created 10.12.2016
- * Updated 10.12.2016
+ * Updated 04.01.2017
  */
 
 public class Question implements Serializable{
 
-    private String word1;
-    private String word2;
+    private LinkedList<String> words1;
+    private LinkedList<String> words2;
 
-    Question(String word1, String word2){
-        this.word1 = word1;
-        this.word2 = word2;
+    public Question() {
+        this.words1 = new LinkedList<>();
+        this.words2 = new LinkedList<>();
     }
 
-    boolean isCorrect(String input){
+    Question(LinkedList<String> words1, LinkedList<String> words2){
 
-        if(input.equalsIgnoreCase(word2))
-            return true;
-        else
-            return false;
+        this.words1 = new LinkedList<>();
+        this.words2 = new LinkedList<>();
+
+        this.words1.addAll(words1);
+        this.words2.addAll(words2);
+
     }
 
-    String getWord1() {
-        return word1;
+    public String getWord1(int index){
+        return words1.get(index);
     }
 
-    String getWord2() {
-        return word2;
+    public String getWord2 (int index) {
+        return words2.get(index);
     }
 
-}
+    public int getMaxSize(){
+        return words1.size();
+    }
+
+    public boolean isCorrect(String answer, int index){
+        return answer.equalsIgnoreCase(words2.get(index));
+    }
+
+    public void addNextSet(Question question){
+
+        this.words1.addAll(question.words1);
+        this.words2.addAll(question.words2);
+
+    }
+
+
+    }
+
