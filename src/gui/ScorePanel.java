@@ -12,18 +12,43 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
- * @version 1.0
+ * @version 1.2
  * @author Radosław Jajko
  *
  * created 20.12.2016
- * updated 02.01.2017
+ * updated 06.01.2017
  */
 
-public class ScorePanel extends EPanel {
+public class ScorePanel extends EPanel implements IEngPanels{
 
     private EPanel pScores = null;
 
     ScorePanel(){
+
+        createAndShowGUI();
+
+    }
+
+    public void addRecord(String user, int points, float time){
+
+        Date date = new Date();
+        DateFormat dateFormat = new SimpleDateFormat("yyyy.MM.dd HH:mm");
+
+        //Add new Panel with scores:
+        EPanel panel = new EPanel(new GridLayout(0,4));
+
+        panel.add(new ELabel(user+": "));
+        panel.add(new ELabel(String.valueOf(points)));
+        panel.add(new ELabel(String.format("%.2f",time)+"s"));
+        panel.add(new ELabel(dateFormat.format(date)));
+
+        //Add panel as record
+        pScores.add(panel);
+        pScores.updateUI();
+    }
+
+    @Override
+    public void createAndShowGUI() {
 
         //Main panel to handle objects
         EPanel panel = new EPanel(new BorderLayout());
@@ -48,21 +73,8 @@ public class ScorePanel extends EPanel {
 
     }
 
-    public void addRecord(String user, int points){
+    @Override
+    public void initializeGUI() {
 
-        Date date = new Date();
-        DateFormat dateFormat = new SimpleDateFormat("yyyy.MM.dd HH:mm");
-
-        //Add new Panel with scores:
-        EPanel panel = new EPanel(new GridLayout(0,3));
-
-        panel.add(new ELabel(user+": "));
-        panel.add(new ELabel(String.valueOf(points)));
-        panel.add(new ELabel(dateFormat.format(date)));
-
-        //Add panel as record
-        pScores.add(panel);
-        pScores.updateUI();
     }
-
 }

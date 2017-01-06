@@ -23,7 +23,7 @@ import java.util.Date;
  * UserPanel creates panel to choose/add/delete user
  * In this panel possible is level and score check
  *
- * @version 1.1
+ * @version 1.2
  * @author Radosław Jajko
  *
  * Created 14.12.2016
@@ -221,6 +221,7 @@ public class UserPanel extends EPanel implements ListSelectionListener, UserMode
 
         tfScore.setText(String.valueOf(MainFrame.getCore().getActiveUser().getLevel().getScore()));
         tfLevel.setText(MainFrame.getCore().getActiveUser().getLevel().getCurrentLevel());
+        tfLastActivity.setText(dateFormat.format(MainFrame.getCore().getUsers().get(list.getSelectedIndex()).getLastActive()));
 
     }
 }

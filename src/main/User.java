@@ -12,7 +12,7 @@ import java.util.Map;
  * User class
  * Describing simple attributes of simple user
  *
- * @version 1.1
+ * @version 1.2
  * @author Radosław Jajko
  *
  * Created 10.12.2016
@@ -47,12 +47,14 @@ public class User implements Serializable , Observable{
 
     public void setLastScore(int lastScore) {
         this.lastScore = lastScore;
-        modelChanged();
     }
 
     public Date getLastActive() { return lastActive; }
 
-    public void setLastActive(Date date) { this.lastActive = date; }
+    public void setLastActive(Date date) {
+        this.lastActive = date;
+        modelChanged();
+    }
 
     public Level getLevel() {
         return level;

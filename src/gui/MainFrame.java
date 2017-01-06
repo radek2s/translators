@@ -14,11 +14,11 @@ import java.awt.*;
  * Contains every static panels using by an application
  * Contains also Core object which include all user data and game data
  *
- * @version 1.0
+ * @version 1.2
  * @author  Radosław Jajko
  *
  * Created 10.12.2016.
- * Updated 29.12.2016.
+ * Updated 04.01.2017.
  */
 
 public class MainFrame extends JFrame{
@@ -91,8 +91,8 @@ public class MainFrame extends JFrame{
 
         getMainFrame().setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         getMainFrame().setMinimumSize(new Dimension(400,300));
-        getMainFrame().setPreferredSize(new Dimension(600,500));
-        getMainFrame().setLocation(300,200);
+        getMainFrame().setPreferredSize(new Dimension(800,600));
+        getMainFrame().setLocation(400,100);
         getMainFrame().setTitle("Java English Word Translator");
 
 
@@ -106,6 +106,7 @@ public class MainFrame extends JFrame{
 
     private void prepareEnvironment(){
 
+        core.testDataLoading();
         core = core.initialize(core);
         getUserPanel().initialize();
     }

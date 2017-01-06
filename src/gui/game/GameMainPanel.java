@@ -2,6 +2,7 @@ package gui.game;
 
 import controller.BackButtonListener;
 import controller.GameContorller.NextQuestionListener;
+import controller.GameContorller.TimeModelListener;
 import gui.IEngPanels;
 import gui.customcomponents.EButton;
 import gui.customcomponents.ELabel;
@@ -19,14 +20,14 @@ import java.util.Date;
  * words to translate and buttons to operate during
  * making progress in questions
  *
- * @version 1.1
+ * @version 1.2
  * @author Radosław Jajko
  *
  * Created 11.12.2016
- * Updated 03.01.2017
+ * Updated 06.01.2017
  */
 
-public class GameMainPanel extends EPanel implements IEngPanels {
+public class GameMainPanel extends EPanel implements IEngPanels, TimeModelListener {
 
     private int i = 0;
     private int max;
@@ -35,7 +36,6 @@ public class GameMainPanel extends EPanel implements IEngPanels {
     private JTextField tfWord2;
 
     private EButton bNext;
-    private EButton bBack;
 
     private GameProgressPanel progressPanel;
     private EPanel mainPanel;
@@ -51,8 +51,6 @@ public class GameMainPanel extends EPanel implements IEngPanels {
 
         createAndShowGUI();
 
-        bBack.addActionListener(new BackButtonListener());
-
         tfWord2.addKeyListener(new KeyListener() {
             @Override
             public void keyTyped(KeyEvent e) {
@@ -64,9 +62,6 @@ public class GameMainPanel extends EPanel implements IEngPanels {
 
                 if (e.getKeyCode()==KeyEvent.VK_ENTER){
                     bNext.doClick();
-                }
-                if (e.getKeyCode()==KeyEvent.VK_ESCAPE){
-                    bBack.doClick();
                 }
 
             }
@@ -109,7 +104,11 @@ public class GameMainPanel extends EPanel implements IEngPanels {
         /* Create word panel which contains word to translate and tex field to write*/
         //Words Panel
         EPanel wordPanel = new EPanel( new GridLayout(0,1));
+        Dimension wordsPanelDimensions = new Dimension(450,40);
         wordPanel.setBorder(BorderFactory.createEmptyBorder(10,10,10,10));
+        wordPanel.setMinimumSize(wordsPanelDimensions);
+        wordPanel.setMaximumSize(wordsPanelDimensions);
+        wordPanel.setPreferredSize(wordsPanelDimensions);
 
         lWord1b = new ELabel();
         lWord1b.setHorizontalAlignment(SwingConstants.LEFT);
@@ -120,17 +119,14 @@ public class GameMainPanel extends EPanel implements IEngPanels {
         wordPanel.add(new ELabel("Translate:"));
         wordPanel.add(lWord1b);
         wordPanel.add(tfWord2);
-        wordPanel.setPreferredSize(new Dimension(250,80));
 
         //Buttons Panel
         EPanel buttonsPane = new EPanel( new GridLayout(1,2));
         buttonsPane.setBorder(BorderFactory.createEmptyBorder(20,10,10,10));
 
-        bNext           = new EButton("Start");
-        bBack           = new EButton("Back");
+        bNext           = new EButton("Next word");
 
-
-        buttonsPane.add(bBack);
+        buttonsPane.add(new EPanel());
         buttonsPane.add(bNext);
 
         //Creating main panel and adding word and buttons panels
@@ -167,6 +163,9 @@ public class GameMainPanel extends EPanel implements IEngPanels {
             MainFrame.getCore().getActiveUser().getLevel().setScore(MainFrame.getCore().getActiveUser().getLastScore());
             MainFrame.getUserPanel().getTfLevel().setText(MainFrame.getCore().getActiveUser().getLevel().getCurrentLevel());
             MainFrame.getCore().getActiveUser().getBestScores().put(new Date(),MainFrame.getCore().getActiveUser().getLastScore());
+
+            MainFrame.getCore().getTimer().stop();
+            MainFrame.getCore().getTimer().unsubscribe(this);
 
             initializeSummaryPanel();
 
@@ -211,11 +210,17 @@ public class GameMainPanel extends EPanel implements IEngPanels {
         EButton button  = new EButton("Continue");
         button.addActionListener(e -> {
 
-            MainFrame.getScorePanel().addRecord(MainFrame.getCore().getActiveUser().getUsername(),MainFrame.getCore().getActiveUser().getLastScore());
+            MainFrame.getScorePanel().addRecord(
+                    MainFrame.getCore().getActiveUser().getUsername(),
+                    MainFrame.getCore().getActiveUser().getLastScore(),
+                    MainFrame.getCore().getTimer().getTime()
+            );
             MainFrame.getMainFrame().setContentPane(MainFrame.getScorePanel());
             MainFrame.getMainFrame().revalidate();
             MainFrame.getCore().getActiveUser().setLastScore(0);
+            MainFrame.getCore().getActiveUser().setLastActive(new Date());
             MainFrame.getCore().saveSession(MainFrame.getCore());
+
 
 
         });
@@ -266,6 +271,7 @@ public class GameMainPanel extends EPanel implements IEngPanels {
     public void initializeGUI() {
 
         i = 0;
+        MainFrame.getCore().getTimer().subscribe(this);
         progressPanel.initializeGUI();
         max = MainFrame.getCore().getDuration()-1;
         mainPanel.setVisible(true);
@@ -307,5 +313,10 @@ public class GameMainPanel extends EPanel implements IEngPanels {
         opinion.setText(opinionGeneration(score,max+1));
         percent.setText(String.valueOf(doublepercent*100)+"%");
 
+    }
+
+    @Override
+    public void timeChanged() {
+        progressPanel.getlTime().setText(String.format("%.2f",MainFrame.getCore().getTimer().getTime()));
     }
 }

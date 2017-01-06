@@ -24,7 +24,7 @@ public class Question implements Serializable{
         this.words2 = new LinkedList<>();
     }
 
-    Question(LinkedList<String> words1, LinkedList<String> words2){
+    public Question(LinkedList<String> words1, LinkedList<String> words2){
 
         this.words1 = new LinkedList<>();
         this.words2 = new LinkedList<>();

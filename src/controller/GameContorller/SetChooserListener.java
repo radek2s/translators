@@ -1,16 +1,17 @@
 package controller.GameContorller;
 
 import gui.MainFrame;
+import main.Timer;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 /**
- * @version 1.1
+ * @version 1.2
  * @author Radosław Jajko
  *
  * created 03.01.2017
- * updated --.--.----
+ * updated 04.01.2017
  */
 public class SetChooserListener implements ActionListener {
 
@@ -31,7 +32,9 @@ public class SetChooserListener implements ActionListener {
         MainFrame.getMainFrame().setContentPane(MainFrame.getGameMainPanel());
         MainFrame.getMainFrame().validate();
         MainFrame.getCore().generateNewOrder(MainFrame.getCore().getActiveQuestionSet().getMaxSize());
+        MainFrame.getCore().setTimer(new Timer());
         MainFrame.getGameMainPanel().initializeGUI();
+        MainFrame.getCore().getTimer().start();
 
     }
 

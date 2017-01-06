@@ -14,35 +14,26 @@ import java.awt.*;
  * SettingsPanel creates panel to choose number of questions
  * in single game
  *
- * @version 1.0
+ * @version 1.2
  * @author Radosław Jajko
  *
  * Created 11.12.2016
- * Updated 02.01.2016
+ * Updated 06.01.2016
  */
-public class SettingsPanel extends EPanel {
+public class SettingsPanel extends EPanel implements IEngPanels{
 
 
     private ELabel lSettings;
     private EButton bBack;
 
+    ERadioButton radioButton1;
+    ERadioButton radioButton2;
+    ERadioButton radioButton3;
+    ERadioButton radioButton4;
+
     public SettingsPanel(){
 
-        EPanel panel= new EPanel(new BorderLayout());
-
-        lSettings   = new ELabel("Settings");
-        lSettings.setHorizontalAlignment(SwingConstants.CENTER);
-
-        bBack       = new EButton("Back");
-
-        EPanel optionsPanel = new EPanel(new GridLayout(0,2));
-        optionsPanel.add(createDurationPanel());
-
-        panel.add(lSettings,BorderLayout.PAGE_START);
-        panel.add(optionsPanel,BorderLayout.CENTER);
-        panel.add(bBack,BorderLayout.PAGE_END);
-
-        this.add(panel);
+        createAndShowGUI();
 
         bBack.addActionListener(new BackButtonListener());
 
@@ -53,10 +44,10 @@ public class SettingsPanel extends EPanel {
         EPanel panel = new EPanel();
 
         ELabel label                = new ELabel("Set number of words to translate:");
-        ERadioButton radioButton1   = new ERadioButton("Short (5 words)");
-        ERadioButton radioButton2   = new ERadioButton("Medium (10 words)");
-        ERadioButton radioButton3   = new ERadioButton("Long (15 words)");
-        ERadioButton radioButton4   = new ERadioButton("Maximum (all words)");
+        radioButton1 = new ERadioButton("Short (5 words)");
+        radioButton2 = new ERadioButton("Medium (10 words)");
+        radioButton3 = new ERadioButton("Long (15 words)");
+        radioButton4 = new ERadioButton("Maximum (all words)");
 
         radioButton1.setSelected(true);
 
@@ -87,4 +78,60 @@ public class SettingsPanel extends EPanel {
     }
 
 
+    @Override
+    public void createAndShowGUI() {
+
+        EPanel panel= new EPanel(new BorderLayout());
+
+        lSettings   = new ELabel("Settings");
+        lSettings.setHorizontalAlignment(SwingConstants.CENTER);
+
+        bBack       = new EButton("Back");
+
+        EPanel optionsPanel = new EPanel(new GridLayout(0,2));
+        optionsPanel.add(createDurationPanel());
+
+        panel.add(lSettings,BorderLayout.PAGE_START);
+        panel.add(optionsPanel,BorderLayout.CENTER);
+        panel.add(bBack,BorderLayout.PAGE_END);
+
+        this.add(panel);
+
+    }
+
+    @Override
+    public void initializeGUI() {
+
+        switch (MainFrame.getCore().getDuration()){
+            case 5: {
+                radioButton1.setSelected(true);
+                radioButton2.setSelected(false);
+                radioButton3.setSelected(false);
+                radioButton4.setSelected(false);
+                break;
+            }
+            case 10: {
+                radioButton1.setSelected(false);
+                radioButton2.setSelected(true);
+                radioButton3.setSelected(false);
+                radioButton4.setSelected(false);
+                break;
+            }
+            case 15: {
+                radioButton1.setSelected(false);
+                radioButton2.setSelected(false);
+                radioButton3.setSelected(true);
+                radioButton4.setSelected(false);
+                break;
+            }
+            default: {
+                radioButton1.setSelected(false);
+                radioButton2.setSelected(false);
+                radioButton3.setSelected(false);
+                radioButton4.setSelected(true);
+                break;
+            }
+        }
+
+    }
 }

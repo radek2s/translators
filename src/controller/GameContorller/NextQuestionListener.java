@@ -28,8 +28,9 @@ public class NextQuestionListener implements ActionListener {
 
             if ( test ) {
                 System.out.println("Great!");
-                MainFrame.getCore().getActiveUser().setLastScore(MainFrame.getCore().getActiveUser().getLastScore()+1);
                 MainFrame.getGameMainPanel().getProgressPanel().setWasCorrect(true);
+                MainFrame.getCore().getActiveUser().setLastScore(MainFrame.getCore().getActiveUser().getLastScore()+1);
+
             } else {
                 System.out.println("Wrong answer.");
                 MainFrame.getGameMainPanel().getProgressPanel().setWasCorrect(false);

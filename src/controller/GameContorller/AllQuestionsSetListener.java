@@ -1,7 +1,9 @@
 package controller.GameContorller;
 
 import gui.MainFrame;
+import main.Factory.QuestionFactory;
 import main.Question;
+import main.Timer;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -10,11 +12,11 @@ import java.awt.event.ActionListener;
  * Class which create new expanded Question which contains more
  * than one simple question.
  *
- * @version 1.1
+ * @version 1.2
  * @author Radosław Jajko
  *
  * created 04.01.2017
- * updated --.--.----
+ * updated 06.01.2017
  */
 public class AllQuestionsSetListener implements ActionListener {
 
@@ -24,7 +26,7 @@ public class AllQuestionsSetListener implements ActionListener {
     public AllQuestionsSetListener(int i){
 
         this.index = i;
-        expandedQuestion = new Question();
+        expandedQuestion = QuestionFactory.createEmptyQuestion();
 
     }
 
@@ -136,6 +138,8 @@ public class AllQuestionsSetListener implements ActionListener {
         MainFrame.getMainFrame().setContentPane(MainFrame.getGameMainPanel());
         MainFrame.getMainFrame().validate();
         MainFrame.getCore().generateNewOrder(MainFrame.getCore().getActiveQuestionSet().getMaxSize());
+        MainFrame.getCore().setTimer(new Timer());
         MainFrame.getGameMainPanel().initializeGUI();
+        MainFrame.getCore().getTimer().start();
     }
 }

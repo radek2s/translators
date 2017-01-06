@@ -1,7 +1,11 @@
 package main;
 
 import gui.MainFrame;
+import main.Factory.QuestionFactory;
+import main.Factory.UserFactory;
 
+import javax.swing.*;
+import java.awt.*;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -14,11 +18,11 @@ import java.util.Random;
  * Loads data from files and saves Sessions
  * checks users answers
  *
- * @version 1.1
+ * @version 1.2
  * @author Radosław Jajko
  *
  * Created 21.12.2016
- * Updated 04.01.2017
+ * Updated 06.01.2017
  */
 public class Core implements ICore, Serializable{
 
@@ -26,11 +30,13 @@ public class Core implements ICore, Serializable{
     private int duration                    = 5;
     private ArrayList<Integer> order        = new ArrayList<>();
 
-    private Question activeQuestionSet      = new Question();
+    private Question activeQuestionSet      = QuestionFactory.createEmptyQuestion();
     private LinkedList<Question> questions  = new LinkedList<>();
 
-    private User activeUser                 = new User("Test");
+    private User activeUser                 = UserFactory.createUser("Test");
     private LinkedList<User> users          = new LinkedList<>();
+
+    private Timer timer;
 
     /* Getters and setters*/
     //Duration
@@ -72,11 +78,20 @@ public class Core implements ICore, Serializable{
 
     //users
     public void addUsers(String username) {
-        this.users.add(new User(username));
+        this.users.add(UserFactory.createUser(username));
     }
 
     public LinkedList<User> getUsers() {
         return users;
+    }
+
+    //timer
+    public Timer getTimer() {
+        return timer;
+    }
+
+    public void setTimer(Timer timer) {
+        this.timer = timer;
     }
 
     /* Methods to control Core */
@@ -127,7 +142,9 @@ public class Core implements ICore, Serializable{
     @Override
     public void loadAllData(){
 
-        String path = "resources/database/";
+        String s = System.getProperty("file.separator"); //s - separator
+
+        String path = "resources"+s+"database"+s;
         for ( int k = 1 ; k <= 13 ; k++ ){
 
             String domain = String.valueOf(k);
@@ -158,7 +175,7 @@ public class Core implements ICore, Serializable{
                 }
 
                 if (words1.size() != 0 && words2.size() != 0){
-                    questions.add(new Question(words1,words2));
+                    questions.add(QuestionFactory.createQuestion(words1,words2));
                 }
             }
         }
@@ -192,7 +209,7 @@ public class Core implements ICore, Serializable{
         }
 
         if (words1.size() != 0 && words2.size() != 0){
-            activeQuestionSet = new Question(words1,words2);
+            activeQuestionSet = QuestionFactory.createQuestion(words1,words2);
         }
 
 
@@ -201,8 +218,10 @@ public class Core implements ICore, Serializable{
     @Override
     public Core initialize(Core core) {
 
+        String s = System.getProperty("file.separator"); //s - separator
+
         try {
-            ObjectInputStream inputStream = new ObjectInputStream( new FileInputStream("resources/data.bin"));
+            ObjectInputStream inputStream = new ObjectInputStream( new FileInputStream("resources"+s+"data.bin"));
             core = (Core) inputStream.readObject();
         } catch ( IOException e){
             e.printStackTrace();
@@ -218,12 +237,58 @@ public class Core implements ICore, Serializable{
     @Override
     public void saveSession(Core core){
 
+        String s = System.getProperty("file.separator"); //s - separator
+
         try {
-            ObjectOutputStream outputStream = new ObjectOutputStream(new FileOutputStream("resources/data.bin"));
+            ObjectOutputStream outputStream = new ObjectOutputStream(new FileOutputStream("resources"+s+"data.bin"));
             outputStream.writeObject(core);
         } catch ( IOException e){
             e.printStackTrace();
         }
+    }
+
+    /**
+     * Inform user that from whole database are missing files
+     * If the number of missing files is too large inform user
+     * that probably whole directory is not located properly
+     */
+
+    public void testDataLoading() {
+
+        String s = System.getProperty("file.separator"); //s - separator
+        StringBuilder missing = new StringBuilder();
+        String path = "resources" + s + "database" + s;
+
+        //Make research for missing files
+        for (int k = 1; k <= 13; k++) {
+
+            String domain = String.valueOf(k);
+            for (int i = 1; i <= 9; i++) {
+
+                String baseId = "0" + String.valueOf(i) + ".txt";
+
+                File file = new File(path + domain + baseId);
+                if (!file.exists()) {
+                    missing.append(domain+baseId+", \n");
+                }
+            }
+        }
+
+        //If too many files are missing probably user runs application without
+        //existing folder or resources folder has wrong localization
+        if (missing.length() > 1000){
+            missing.delete(0,missing.length());
+            missing.append("Check location of \"resources\" directory");
+        }
+
+        // Inform user that some of files has been lost
+        if (missing.length() != 0){
+            JOptionPane.showMessageDialog(new Frame(),
+                    "Missing resources files! \n"+missing,
+                    "File not found error",
+                    JOptionPane.WARNING_MESSAGE);
+        }
+
     }
 
 }

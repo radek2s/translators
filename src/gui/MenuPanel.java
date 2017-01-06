@@ -13,11 +13,11 @@ import java.awt.event.ActionListener;
  * Menu Panel class
  * Creates main menu panel with buttons to sub-menus
  *
- * @version 1.0
+ * @version 1.2
  * @author Radosław Jajko
  *
  * Created 10.12.2016
- * Updated 02.01.2017
+ * Updated 06.01.2017
  *
  */
 
@@ -66,6 +66,7 @@ public class MenuPanel extends EPanel {
         });
 
         bSettings.addActionListener(e -> {
+            MainFrame.getSettingsPanel().initializeGUI();
             MainFrame.getMainFrame().setContentPane(MainFrame.getSettingsPanel());
             MainFrame.getMainFrame().validate();
         });
