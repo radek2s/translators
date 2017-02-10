@@ -18,16 +18,17 @@ import java.util.Random;
  * Loads data from files and saves Sessions
  * checks users answers
  *
- * @version 1.2
+ * @version 1.3
  * @author Radosław Jajko
  *
  * Created 21.12.2016
- * Updated 06.01.2017
+ * Updated 10.02.2017
  */
 public class Core implements ICore, Serializable{
 
 
     private int duration                    = 5;
+    private long reminderTime                = 5;
     private ArrayList<Integer> order        = new ArrayList<>();
 
     private Question activeQuestionSet      = QuestionFactory.createEmptyQuestion();
@@ -46,6 +47,15 @@ public class Core implements ICore, Serializable{
 
     public int getDuration(){
         return duration;
+    }
+
+    //reminderTime
+    public long getReminderTime() {
+        return reminderTime;
+    }
+
+    public void setReminderTime(long reminderTime) {
+        this.reminderTime = reminderTime;
     }
 
     //order

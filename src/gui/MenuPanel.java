@@ -1,5 +1,6 @@
 package gui;
 
+import controller.ReminderListener;
 import gui.customcomponents.EButton;
 import gui.customcomponents.ELabel;
 import gui.customcomponents.EPanel;
@@ -13,11 +14,11 @@ import java.awt.event.ActionListener;
  * Menu Panel class
  * Creates main menu panel with buttons to sub-menus
  *
- * @version 1.2
+ * @version 1.3
  * @author Radosław Jajko
  *
  * Created 10.12.2016
- * Updated 06.01.2017
+ * Updated 10.02.2017
  *
  */
 
@@ -29,11 +30,12 @@ public class MenuPanel extends EPanel {
         EButton bScore;
         EButton bSettings;
         EButton bLogin;
+        EButton bRemind;
         EButton bExit;
         ELabel lWelcome;
 
         EPanel bpanel = new EPanel();
-        GridLayout buttonGridLayout = new GridLayout(6,0);
+        GridLayout buttonGridLayout = new GridLayout(0,1);
         buttonGridLayout.setVgap(10);
         bpanel.setLayout(buttonGridLayout);
 
@@ -43,6 +45,7 @@ public class MenuPanel extends EPanel {
         bScore  = new EButton ("Score");
         bSettings=new EButton ("Settings");
         bLogin  = new EButton ("Login");
+        bRemind = new EButton ("Remind Later");
         bExit   = new EButton ("EXIT");
 
         bpanel.add(lWelcome);
@@ -50,6 +53,7 @@ public class MenuPanel extends EPanel {
         bpanel.add(bScore);
         bpanel.add(bSettings);
         bpanel.add(bLogin);
+        bpanel.add(bRemind);
         bpanel.add(bExit);
 
         this.add(bpanel);
@@ -75,6 +79,8 @@ public class MenuPanel extends EPanel {
             MainFrame.getMainFrame().setContentPane(MainFrame.getUserPanel());
             MainFrame.getMainFrame().validate();
         });
+
+        bRemind.addActionListener(new ReminderListener());
 
         bExit.addActionListener(new ActionListener() {
             @Override
