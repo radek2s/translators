@@ -23,11 +23,11 @@ import java.util.Date;
  * UserPanel creates panel to choose/add/delete user
  * In this panel possible is level and score check
  *
- * @version 1.2
+ * @version 1.3
  * @author Radosław Jajko
  *
  * Created 14.12.2016
- * Updated 04.01.2016
+ * Updated 10.02.2016
  */
 
 public class UserPanel extends EPanel implements ListSelectionListener, UserModelListener {
@@ -42,7 +42,7 @@ public class UserPanel extends EPanel implements ListSelectionListener, UserMode
     private DefaultListModel listModel;
     private DateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy HH:mm:ss");
 
-    private EButton bSaveUser = null;
+    private EButton bAddUser = null;
     private EButton bRemoveUser = null;
     private EButton bSetUSer = null;
     private EButton bBack = null;
@@ -121,19 +121,35 @@ public class UserPanel extends EPanel implements ListSelectionListener, UserMode
         EPanel buttonsPanel = new EPanel(new BorderLayout());
 
         EPanel removeSavePanel = new EPanel(new GridLayout(0,2));
-        bSaveUser   = new EButton("Save User");
+
+        EButton bSaveUser;
+        EButton bLoadUser;
+
+        bAddUser = new EButton("Add User");
         bRemoveUser = new EButton("Remove User");
+        bSaveUser   = new EButton("Save User");
+        bLoadUser   = new EButton("Load User");
         bSetUSer    = new EButton("Set as active user");
         bBack       = new EButton("Back to menu");
 
 
-        bSaveUser.addActionListener(new AddButtonListener());
+        bAddUser.addActionListener(new AddButtonListener());
 
         bRemoveUser.addActionListener(new DeleteButtonListener());
 
+        bSaveUser.addActionListener(e ->{
+            MainFrame.getCore().getActiveUser().saveUser(list.getSelectedIndex());
+        });
+        bLoadUser.addActionListener(e ->{
+            MainFrame.getCore().getActiveUser().loadUser();
+            listModel.removeAllElements();
+            initialize();
+        });
 
-        removeSavePanel.add(bSaveUser);
+        removeSavePanel.add(bAddUser);
         removeSavePanel.add(bRemoveUser);
+        removeSavePanel.add(bSaveUser);
+        removeSavePanel.add(bLoadUser);
         removeSavePanel.setBorder(border);
 
         buttonsPanel.add(removeSavePanel, BorderLayout.PAGE_START);
@@ -155,6 +171,7 @@ public class UserPanel extends EPanel implements ListSelectionListener, UserMode
             MainFrame.getCore().getActiveUser().setLastActive(new Date());
             MainFrame.getCore().getActiveUser().subscribe(this);
             tfActiveUser.setText(MainFrame.getCore().getActiveUser().getUsername());
+            MainFrame.getMenuPanel().initialize();
         });
 
         bBack.addActionListener(new BackButtonListener());

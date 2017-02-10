@@ -2,8 +2,11 @@ package main;
 
 import controller.UserPanelController.Observable;
 import controller.UserPanelController.UserModelListener;
+import gui.MainFrame;
 
-import java.io.Serializable;
+import javax.swing.*;
+import javax.swing.filechooser.FileNameExtensionFilter;
+import java.io.*;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
@@ -12,11 +15,11 @@ import java.util.Map;
  * User class
  * Describing simple attributes of simple user
  *
- * @version 1.2
+ * @version 1.3
  * @author Radosław Jajko
  *
  * Created 10.12.2016
- * Updated 04.01.2017
+ * Updated 10.02.2017
  */
 
 public class User implements Serializable , Observable{
@@ -84,5 +87,46 @@ public class User implements Serializable , Observable{
     @Override
     public void unsubscribe(UserModelListener l) {
         listener = null;
+    }
+
+    /**
+     * Method to save active user to file to export progress outside the application.
+     * Saves into file "<activeUser_username>.usr in application directory.
+     * @param index - save selected user
+     */
+    public void saveUser(int index){
+
+        try {
+            ObjectOutputStream os = new ObjectOutputStream(new FileOutputStream(MainFrame.getCore().getUsers().get(index).getUsername()+".usr"));
+            os.writeObject(MainFrame.getCore().getUsers().get(index));
+        } catch ( IOException e){
+            e.printStackTrace();
+        }
+    }
+
+    /**
+     * Method to load single user data form file "*.usr".
+     * It's loads the data and adds into users array list.
+     */
+    public void loadUser(){
+
+        /* Prepare fileChooser */
+        JFileChooser fileChooser = new JFileChooser();
+        FileNameExtensionFilter filter = new FileNameExtensionFilter("User Save","usr","UserData");
+        fileChooser.setFileFilter(filter);
+        File selectedFile = null;
+        int returnValue = fileChooser.showOpenDialog(null);
+        if ( returnValue == JFileChooser.APPROVE_OPTION ){
+            selectedFile = fileChooser.getSelectedFile();
+            System.out.println(selectedFile.getAbsolutePath());
+        }
+
+        /* Open and read User Saved data */
+        try {
+            ObjectInputStream is = new ObjectInputStream( new FileInputStream(selectedFile.getAbsolutePath()));
+            MainFrame.getCore().addUsers((User) is.readObject());
+        } catch (IOException | ClassNotFoundException e){
+            e.printStackTrace();
+        }
     }
 }

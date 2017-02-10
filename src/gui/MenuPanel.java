@@ -24,6 +24,8 @@ import java.awt.event.ActionListener;
 
 public class MenuPanel extends EPanel {
 
+    ELabel activeUserLabel;
+
     MenuPanel(){
 
         EButton bPlay;
@@ -41,6 +43,9 @@ public class MenuPanel extends EPanel {
 
         lWelcome= new ELabel("Welcome!");
         lWelcome.setHorizontalAlignment(SwingConstants.CENTER);
+        activeUserLabel = new ELabel("");
+        activeUserLabel.setHorizontalAlignment(SwingConstants.CENTER);
+        activeUserLabel.setFont(new Font("Arial",Font.BOLD , 20));
         bPlay   = new EButton ("Play");
         bScore  = new EButton ("Score");
         bSettings=new EButton ("Settings");
@@ -49,6 +54,7 @@ public class MenuPanel extends EPanel {
         bExit   = new EButton ("EXIT");
 
         bpanel.add(lWelcome);
+        bpanel.add(activeUserLabel);
         bpanel.add(bPlay);
         bpanel.add(bScore);
         bpanel.add(bSettings);
@@ -90,6 +96,10 @@ public class MenuPanel extends EPanel {
             }
         });
 
+    }
+
+    public void initialize(){
+        activeUserLabel.setText(MainFrame.getCore().getActiveUser().getUsername());
     }
 
 }

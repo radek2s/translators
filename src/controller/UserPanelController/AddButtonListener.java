@@ -34,7 +34,7 @@ public class AddButtonListener implements ActionListener {
             MainFrame.getUserPanel().getListModel().addElement(MainFrame.getUserPanel().getTfUsername().getText());
             MainFrame.getUserPanel().getList().setSelectedIndex(size);
         } else {
-            MainFrame.getUserPanel().getListModel().insertElementAt(MainFrame.getUserPanel().getTfUsername().getText(), index+1);
+            MainFrame.getUserPanel().getListModel().insertElementAt(MainFrame.getUserPanel().getTfUsername().getText(), size);
             MainFrame.getUserPanel().getList().setSelectedIndex(size+1);
         }
 

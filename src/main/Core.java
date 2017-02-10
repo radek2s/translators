@@ -90,6 +90,9 @@ public class Core implements ICore, Serializable{
     public void addUsers(String username) {
         this.users.add(UserFactory.createUser(username));
     }
+    public void addUsers(User user){
+        this.users.add(user);
+    }
 
     public LinkedList<User> getUsers() {
         return users;
