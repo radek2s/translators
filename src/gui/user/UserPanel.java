@@ -27,7 +27,7 @@ import java.util.Date;
  * @author Radosław Jajko
  *
  * Created 14.12.2016
- * Updated 10.02.2016
+ * Updated 11.02.2016
  */
 
 public class UserPanel extends EPanel implements ListSelectionListener, UserModelListener {
@@ -138,6 +138,7 @@ public class UserPanel extends EPanel implements ListSelectionListener, UserMode
         bRemoveUser.addActionListener(new DeleteButtonListener());
 
         bSaveUser.addActionListener(e ->{
+            JOptionPane.showMessageDialog(MainFrame.getMainFrame(),"User saved correctly.");
             MainFrame.getCore().getActiveUser().saveUser(list.getSelectedIndex());
         });
         bLoadUser.addActionListener(e ->{
