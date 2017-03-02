@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="200.0" minWidth="300.0" prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PlayController">
+   <children>
+      <Label layoutX="145.0" layoutY="44.0" text="Select words domain" />
+      <ScrollPane layoutX="14.0" layoutY="61.0" prefHeight="224.0" prefWidth="373.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="513.0" prefWidth="355.0">
+               <children>
+                  <Accordion prefHeight="511.0" prefWidth="358.0">
+                    <panes>
+                        <TitledPane animated="false" text="School">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <GridPane hgap="3.0" layoutX="27.0" layoutY="14.0" vgap="3.0">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Button fx:id="bSchool1" mnemonicParsing="false" onAction="#open0" prefHeight="25.0" prefWidth="150.0" text="Building" />
+                                          <Button fx:id="bSchool2" mnemonicParsing="false" onAction="#open1" prefHeight="25.0" prefWidth="150.0" text="School year" GridPane.columnIndex="1" />
+                                          <Button fx:id="bSchool3" mnemonicParsing="false" onAction="#open2" prefHeight="25.0" prefWidth="150.0" text="Subjects" GridPane.rowIndex="1" />
+                                          <Button fx:id="bSchool4" mnemonicParsing="false" onAction="#open3" prefHeight="25.0" prefWidth="150.0" text="Characteristics" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                          <Button fx:id="bSchool5" mnemonicParsing="false" onAction="#open4" prefHeight="25.0" prefWidth="150.0" text="Phrases" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                          <Button fx:id="bSchool6" mnemonicParsing="false" onAction="#open5" prefHeight="25.0" prefWidth="150.0" text="Schools life" GridPane.rowIndex="2" />
+                                          <Button fx:id="bSchool7" mnemonicParsing="false" onAction="#open6" prefHeight="25.0" prefWidth="150.0" text="Examinable" GridPane.rowIndex="3" />
+                                          <Button fx:id="bSchool8" mnemonicParsing="false" onAction="#open7" prefHeight="25.0" prefWidth="150.0" text="The system of education" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                          <Button fx:id="bSchool9" mnemonicParsing="false" onAction="#open8" prefHeight="25.0" prefWidth="150.0" text="Activities" GridPane.rowIndex="4" />
+                                          <Button fx:id="bSchoolA" mnemonicParsing="false" onAction="#open1All" prefHeight="25.0" prefWidth="150.0" text="All words from school" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </TitledPane>
+                      <TitledPane animated="false" text="Health">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <GridPane hgap="3.0" layoutX="27.0" layoutY="14.0" vgap="3.0">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Button mnemonicParsing="false" onAction="#open9" prefHeight="25.0" prefWidth="150.0" text="Illnesses and symptoms" />
+                                          <Button mnemonicParsing="false" onAction="#open10" prefHeight="25.0" prefWidth="150.0" text="Treatment" GridPane.columnIndex="1" />
+                                          <Button mnemonicParsing="false" onAction="#open11" prefHeight="25.0" prefWidth="150.0" text="Medical care" GridPane.rowIndex="1" />
+                                          <Button mnemonicParsing="false" onAction="#open12" prefHeight="25.0" prefWidth="150.0" text="Alternative medicine" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                          <Button mnemonicParsing="false" onAction="#open14" prefHeight="25.0" prefWidth="150.0" text="The disabled" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                          <Button mnemonicParsing="false" onAction="#open13" prefHeight="25.0" prefWidth="150.0" text="Modern addictions" GridPane.rowIndex="2" />
+                                          <Button mnemonicParsing="false" onAction="#open15" prefHeight="25.0" prefWidth="150.0" text="Healthy lifestyle" GridPane.rowIndex="3" />
+                                          <Button mnemonicParsing="false" onAction="#open2All" prefHeight="25.0" prefWidth="150.0" text="All words from Health" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </AnchorPane>
+            
+                        </content>
+                      </TitledPane>
+                      <TitledPane animated="false" text="House">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <GridPane hgap="3.0" layoutX="27.0" layoutY="14.0" vgap="3.0">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Button mnemonicParsing="false" onAction="#open16" prefHeight="25.0" prefWidth="150.0" text="Sharing and renting" />
+                                          <Button mnemonicParsing="false" onAction="#open17" prefHeight="25.0" prefWidth="150.0" text="Describing houses" GridPane.columnIndex="1" />
+                                          <Button mnemonicParsing="false" onAction="#open18" prefHeight="25.0" prefWidth="150.0" text="Living and returning" GridPane.rowIndex="1" />
+                                          <Button mnemonicParsing="false" onAction="#open19" prefHeight="25.0" prefWidth="150.0" text="Jobs in the house" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                          <Button mnemonicParsing="false" onAction="#open3All" prefHeight="25.0" prefWidth="150.0" text="All words from House" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </TitledPane>
+                      <TitledPane animated="false" text="Family life">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <GridPane hgap="3.0" layoutX="27.0" layoutY="14.0" vgap="3.0">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Button mnemonicParsing="false" onAction="#open20" prefHeight="25.0" prefWidth="150.0" text="Daily routine" />
+                                          <Button mnemonicParsing="false" onAction="#open21" prefHeight="25.0" prefWidth="150.0" text="Leisure time" GridPane.columnIndex="1" />
+                                          <Button mnemonicParsing="false" onAction="#open22" prefHeight="25.0" prefWidth="150.0" text="Stages of life" GridPane.rowIndex="1" />
+                                          <Button mnemonicParsing="false" onAction="#open23" prefHeight="25.0" prefWidth="150.0" text="Family members" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                          <Button mnemonicParsing="false" onAction="#open25" prefHeight="25.0" prefWidth="150.0" text="Relationships" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                          <Button mnemonicParsing="false" onAction="#open24" prefHeight="25.0" prefWidth="150.0" text="Conflicts and problems" GridPane.rowIndex="2" />
+                                          <Button mnemonicParsing="false" onAction="#open26" prefHeight="25.0" prefWidth="150.0" text="Celebrations" GridPane.rowIndex="3" />
+                                          <Button mnemonicParsing="false" onAction="#open4All" prefHeight="25.0" prefWidth="150.0" text="All words from Family" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </TitledPane>
+                        <TitledPane animated="false" text="Work">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <GridPane hgap="3.0" layoutX="27.0" layoutY="14.0" vgap="3.0">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Button mnemonicParsing="false" onAction="#open27" prefHeight="25.0" prefWidth="150.0" text="Jobs" />
+                                          <Button mnemonicParsing="false" onAction="#open28" prefHeight="25.0" prefWidth="150.0" text="At work" GridPane.columnIndex="1" />
+                                          <Button mnemonicParsing="false" onAction="#open29" prefHeight="25.0" prefWidth="150.0" text="People at work" GridPane.rowIndex="1" />
+                                          <Button mnemonicParsing="false" onAction="#open30" prefHeight="25.0" prefWidth="150.0" text="Job market" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                          <Button mnemonicParsing="false" onAction="#open32" prefHeight="25.0" prefWidth="150.0" text="Out of work" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                          <Button mnemonicParsing="false" onAction="#open31" prefHeight="25.0" prefWidth="150.0" text="Looking for job" GridPane.rowIndex="2" />
+                                          <Button mnemonicParsing="false" onAction="#open5All" prefHeight="25.0" prefWidth="150.0" text="All words from Work" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </TitledPane>
+                        <TitledPane animated="false" text="Tourism">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <GridPane hgap="3.0" layoutX="27.0" layoutY="14.0" vgap="3.0">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Button mnemonicParsing="false" onAction="#open33" prefHeight="25.0" prefWidth="150.0" text="Holiday" />
+                                          <Button mnemonicParsing="false" onAction="#open34" prefHeight="25.0" prefWidth="150.0" text="Activities" GridPane.columnIndex="1" />
+                                          <Button mnemonicParsing="false" onAction="#open35" prefHeight="25.0" prefWidth="150.0" text="At a hotel" GridPane.rowIndex="1" />
+                                          <Button mnemonicParsing="false" onAction="#open36" prefHeight="25.0" prefWidth="150.0" text="Travelling abroad" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                          <Button mnemonicParsing="false" onAction="#open37" prefHeight="25.0" prefWidth="150.0" text="Accidents and Problems" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                          <Button mnemonicParsing="false" onAction="#open38" prefHeight="25.0" prefWidth="150.0" text="Travel and Transport" GridPane.rowIndex="2" />
+                                          <Button mnemonicParsing="false" onAction="#open39" prefHeight="25.0" prefWidth="150.0" text="at the stations" GridPane.rowIndex="3" />
+                                          <Button mnemonicParsing="false" onAction="#open6All" prefHeight="25.0" prefWidth="150.0" text="All words from Tourism" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </TitledPane>
+                        <TitledPane animated="false" text="Food">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <GridPane hgap="3.0" layoutX="27.0" layoutY="14.0" vgap="3.0">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Button mnemonicParsing="false" onAction="#open41" prefHeight="25.0" prefWidth="150.0" text="Food" />
+                                          <Button mnemonicParsing="false" onAction="#open42" prefHeight="25.0" prefWidth="150.0" text="Meals" GridPane.columnIndex="1" />
+                                          <Button mnemonicParsing="false" onAction="#open43" prefHeight="25.0" prefWidth="150.0" text="British food" GridPane.rowIndex="1" />
+                                          <Button mnemonicParsing="false" onAction="#open44" prefHeight="25.0" prefWidth="150.0" text="Diets" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                          <Button mnemonicParsing="false" onAction="#open46" prefHeight="25.0" prefWidth="150.0" text="Restaurants" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                          <Button mnemonicParsing="false" onAction="#open45" prefHeight="25.0" prefWidth="150.0" text="Adjectives" GridPane.rowIndex="2" />
+                                          <Button mnemonicParsing="false" onAction="#open7All" prefHeight="25.0" prefWidth="150.0" text="All words from Food" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </TitledPane>
+                        <TitledPane animated="false" text="Human">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <GridPane hgap="3.0" layoutX="27.0" layoutY="14.0" vgap="3.0">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Button mnemonicParsing="false" onAction="#open47" prefHeight="25.0" prefWidth="150.0" text="Personality" />
+                                          <Button mnemonicParsing="false" onAction="#open48" prefHeight="25.0" prefWidth="150.0" text="Feelings" GridPane.columnIndex="1" />
+                                          <Button mnemonicParsing="false" onAction="#open49" prefHeight="25.0" prefWidth="150.0" text="Interests and hobbies" GridPane.rowIndex="1" />
+                                          <Button mnemonicParsing="false" onAction="#open50" prefHeight="25.0" prefWidth="150.0" text="Personal details" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                          <Button mnemonicParsing="false" onAction="#open52" prefHeight="25.0" prefWidth="150.0" text="Clothes" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                          <Button mnemonicParsing="false" onAction="#open51" prefHeight="25.0" prefWidth="150.0" text="Appearance" GridPane.rowIndex="2" />
+                                          <Button mnemonicParsing="false" onAction="#open53" prefHeight="25.0" prefWidth="150.0" text="Body parts" GridPane.rowIndex="3" />
+                                          <Button mnemonicParsing="false" onAction="#open54" prefHeight="25.0" prefWidth="150.0" text="Inside the body" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                          <Button mnemonicParsing="false" onAction="#open55" prefHeight="25.0" prefWidth="150.0" text="Idioms" GridPane.rowIndex="4" />
+                                          <Button mnemonicParsing="false" onAction="#open8All" prefHeight="25.0" prefWidth="150.0" text="All words from Human" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </TitledPane>
+                        <TitledPane animated="false" text="Culture">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <GridPane hgap="3.0" layoutX="27.0" layoutY="14.0" vgap="3.0">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Button mnemonicParsing="false" onAction="#open56" prefHeight="25.0" prefWidth="150.0" text="Mass Media" />
+                                          <Button mnemonicParsing="false" onAction="#open57" prefHeight="25.0" prefWidth="150.0" text="Virtual Arts" GridPane.columnIndex="1" />
+                                          <Button mnemonicParsing="false" onAction="#open58" prefHeight="25.0" prefWidth="150.0" text="Films" GridPane.rowIndex="1" />
+                                          <Button mnemonicParsing="false" onAction="#open59" prefHeight="25.0" prefWidth="150.0" text="Music" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                          <Button mnemonicParsing="false" onAction="#open60" prefHeight="25.0" prefWidth="150.0" text="Literature" GridPane.rowIndex="2" />
+                                          <Button mnemonicParsing="false" onAction="#open9All" prefHeight="25.0" prefWidth="150.0" text="All words from Culture" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </TitledPane>
+                        <TitledPane animated="false" text="Sport">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <GridPane hgap="3.0" layoutX="27.0" layoutY="14.0" vgap="3.0">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Button mnemonicParsing="false" onAction="#open61" prefHeight="25.0" prefWidth="150.0" text="Doing a sport" />
+                                          <Button mnemonicParsing="false" onAction="#open62" prefHeight="25.0" prefWidth="150.0" text="Extreme sports" GridPane.columnIndex="1" />
+                                          <Button mnemonicParsing="false" onAction="#open63" prefHeight="25.0" prefWidth="150.0" text="People" GridPane.rowIndex="1" />
+                                          <Button mnemonicParsing="false" onAction="#open64" prefHeight="25.0" prefWidth="150.0" text="Places to do sports" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                          <Button mnemonicParsing="false" onAction="#open66" prefHeight="25.0" prefWidth="150.0" text="Competitive sports" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                          <Button mnemonicParsing="false" onAction="#open65" prefHeight="25.0" prefWidth="150.0" text="Sports equipment" GridPane.rowIndex="2" />
+                                          <Button mnemonicParsing="false" onAction="#open67" prefHeight="25.0" prefWidth="150.0" text="Sporting events" GridPane.rowIndex="3" />
+                                          <Button mnemonicParsing="false" onAction="#open10All" prefHeight="25.0" prefWidth="150.0" text="All words from Sport" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </TitledPane>
+                        <TitledPane animated="false" text="Science and Technology">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <GridPane hgap="3.0" layoutX="27.0" layoutY="14.0" vgap="3.0">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Button mnemonicParsing="false" onAction="#open68" prefHeight="25.0" prefWidth="150.0" text="Science" />
+                                          <Button mnemonicParsing="false" onAction="#open69" prefHeight="25.0" prefWidth="150.0" text="Areas of science" GridPane.columnIndex="1" />
+                                          <Button mnemonicParsing="false" onAction="#open70" prefHeight="25.0" prefWidth="150.0" text="IT" GridPane.rowIndex="1" />
+                                          <Button mnemonicParsing="false" onAction="#open71" prefHeight="25.0" prefWidth="150.0" text="Inventions &amp; discoveries" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                          <Button mnemonicParsing="false" onAction="#open72" prefHeight="25.0" prefWidth="150.0" text="Machines and gadgets" GridPane.rowIndex="2" />
+                                          <Button mnemonicParsing="false" onAction="#open11All" prefHeight="25.0" prefWidth="150.0" text="All words from Science" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </TitledPane>
+                        <TitledPane animated="false" text="Word of Nature">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <GridPane hgap="3.0" layoutX="27.0" layoutY="14.0" vgap="3.0">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Button mnemonicParsing="false" onAction="#open74" prefHeight="25.0" prefWidth="150.0" text="Environmental problems" />
+                                          <Button mnemonicParsing="false" onAction="#open75" prefHeight="25.0" prefWidth="150.0" text="Space" GridPane.columnIndex="1" />
+                                          <Button mnemonicParsing="false" onAction="#open76" prefHeight="25.0" prefWidth="150.0" text="The Weather" GridPane.rowIndex="1" />
+                                          <Button mnemonicParsing="false" onAction="#open77" prefHeight="25.0" prefWidth="150.0" text="Natural disasters" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                          <Button mnemonicParsing="false" onAction="#open79" prefHeight="25.0" prefWidth="150.0" text="Pets" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                          <Button mnemonicParsing="false" onAction="#open78" prefHeight="25.0" prefWidth="150.0" text="Animals" GridPane.rowIndex="2" />
+                                          <Button mnemonicParsing="false" onAction="#open81" prefHeight="25.0" prefWidth="150.0" text="Geographical features" GridPane.rowIndex="3" />
+                                          <Button mnemonicParsing="false" onAction="#open82" prefHeight="25.0" prefWidth="150.0" text="Animal Idioms" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                          <Button mnemonicParsing="false" onAction="#open12All" prefHeight="25.0" prefWidth="150.0" text="All words from Nature" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </TitledPane>
+                        <TitledPane animated="false" text="Country and Society">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <GridPane hgap="3.0" layoutX="27.0" layoutY="14.0" vgap="3.0">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Button mnemonicParsing="false" onAction="#open83" prefHeight="25.0" prefWidth="150.0" text="Crime and punishment" />
+                                          <Button mnemonicParsing="false" onAction="#open84" prefHeight="25.0" prefWidth="150.0" text="Country" GridPane.columnIndex="1" />
+                                          <Button mnemonicParsing="false" onAction="#open85" prefHeight="25.0" prefWidth="150.0" text="Politics" GridPane.rowIndex="1" />
+                                          <Button mnemonicParsing="false" onAction="#open86" prefHeight="25.0" prefWidth="150.0" text="Charity" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                          <Button mnemonicParsing="false" onAction="#open88" prefHeight="25.0" prefWidth="150.0" text="Religion" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                          <Button mnemonicParsing="false" onAction="#open87" prefHeight="25.0" prefWidth="150.0" text="Economy" GridPane.rowIndex="2" />
+                                          <Button mnemonicParsing="false" onAction="#open89" prefHeight="25.0" prefWidth="150.0" text="War and terrorism" GridPane.rowIndex="3" />
+                                          <Button mnemonicParsing="false" onAction="#open90" prefHeight="25.0" prefWidth="150.0" text="Describing trends" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                          <Button mnemonicParsing="false" onAction="#open13All" prefHeight="25.0" prefWidth="150.0" text="All words from Country" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </TitledPane>
+                    </panes>
+                  </Accordion>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <Button layoutX="144.0" layoutY="19.0" mnemonicParsing="false" onAction="#openAll" prefHeight="25.0" prefWidth="114.0" text="All from database" />
+      <Button layoutX="270.0" layoutY="19.0" mnemonicParsing="false" onAction="#openCustom" prefHeight="25.0" prefWidth="114.0" text="Open from file" />
+      <Button layoutX="18.0" layoutY="19.0" mnemonicParsing="false" onAction="#backMenu" prefHeight="25.0" prefWidth="72.0" text="Back" />
+   </children>
+</Pane>

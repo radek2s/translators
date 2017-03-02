@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="200.0" minWidth="300.0" prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ScorePaneController">
+   <children>
+      <Label layoutX="168.0" layoutY="14.0" text="High Scores" />
+      <Label layoutX="150.0" layoutY="31.0" text="Words Time Attack" />
+      <GridPane hgap="5.0" layoutX="46.0" layoutY="48.0" vgap="5.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" />
+            <ColumnConstraints hgrow="SOMETIMES" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label fx:id="label1" prefHeight="17.0" prefWidth="290.0" text="Label" textAlignment="RIGHT" GridPane.columnIndex="1" GridPane.halignment="LEFT" />
+            <Label fx:id="label2" prefHeight="17.0" prefWidth="289.0" text="Label" textAlignment="RIGHT" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" />
+            <Label fx:id="label3" prefHeight="17.0" prefWidth="290.0" text="Label" textAlignment="RIGHT" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="2" />
+            <Label fx:id="label4" prefHeight="17.0" prefWidth="290.0" text="Label" textAlignment="RIGHT" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="3" />
+            <Label fx:id="label5" prefHeight="17.0" prefWidth="290.0" text="Label" textAlignment="RIGHT" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="4" />
+            <Label fx:id="label6" prefHeight="17.0" prefWidth="290.0" text="Label" textAlignment="RIGHT" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="5" />
+            <Label fx:id="label7" prefHeight="17.0" prefWidth="290.0" text="Label" textAlignment="RIGHT" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="6" />
+            <Label fx:id="label8" prefHeight="17.0" prefWidth="290.0" text="Label" textAlignment="RIGHT" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="7" />
+            <Label fx:id="label9" layoutX="61.0" layoutY="164.0" prefHeight="17.0" prefWidth="290.0" text="Label" textAlignment="RIGHT" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="8" />
+            <Label fx:id="label10" layoutX="61.0" layoutY="193.0" prefHeight="17.0" prefWidth="290.0" text="Label" textAlignment="RIGHT" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+            <Label text="1." GridPane.halignment="RIGHT" GridPane.valignment="CENTER" />
+            <Label text="2." GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+            <Label text="3." GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+            <Label text="4." GridPane.halignment="RIGHT" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+            <Label text="5." GridPane.halignment="RIGHT" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+            <Label text="6." GridPane.halignment="RIGHT" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+            <Label text="7." GridPane.halignment="RIGHT" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+            <Label text="8." GridPane.halignment="RIGHT" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
+            <Label layoutX="30.0" layoutY="164.0" text="9." GridPane.halignment="RIGHT" GridPane.rowIndex="8" GridPane.valignment="CENTER" />
+            <Label layoutX="30.0" layoutY="193.0" text="10." GridPane.halignment="RIGHT" GridPane.rowIndex="9" GridPane.valignment="CENTER" />
+         </children>
+      </GridPane>
+      <Button layoutX="146.0" layoutY="263.0" mnemonicParsing="false" onAction="#backMenu" prefHeight="17.0" prefWidth="107.0" text="Back to menu" />
+   </children>
+</Pane>

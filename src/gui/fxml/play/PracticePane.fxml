@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="200.0" minWidth="300.0" prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PracticeController">
+   <children>
+      <Button fx:id="bNext" layoutX="273.0" layoutY="203.0" mnemonicParsing="false" onAction="#nextWord" prefHeight="25.0" prefWidth="78.0" text="Next word" textAlignment="CENTER" />
+      <ProgressBar fx:id="pgbar" layoutY="277.0" prefHeight="18.0" prefWidth="400.0" progress="0.0" styleClass="red-bar" />
+      <Label fx:id="lCorrect" alignment="CENTER" layoutX="98.0" layoutY="20.0" prefHeight="17.0" prefWidth="205.0" text="Wrong/Good" />
+      <Label fx:id="lCorrectWord" alignment="CENTER" layoutX="98.0" layoutY="37.0" prefHeight="17.0" prefWidth="205.0" text="Correct word" />
+      <Label fx:id="lInputWord" alignment="CENTER" layoutX="98.0" layoutY="54.0" prefHeight="17.0" prefWidth="205.0" text="User input word" />
+      <Pane layoutX="14.0" layoutY="20.0">
+         <children>
+            <Label fx:id="lActiveUser" alignment="CENTER" prefHeight="17.0" prefWidth="70.0" text="Username" />
+            <Label fx:id="lPoints" alignment="CENTER" layoutY="17.0" prefHeight="17.0" prefWidth="70.0" text="0/5" />
+         </children>
+      </Pane>
+      <Label fx:id="lWord" layoutX="51.0" layoutY="133.0" prefHeight="25.0" prefWidth="300.0" text="Label" />
+      <TextField fx:id="tfAnswer" layoutX="51.0" layoutY="163.0" prefHeight="25.0" prefWidth="300.0" />
+      <Button fx:id="bContinue" layoutX="148.0" layoutY="228.0" mnemonicParsing="false" onAction="#backMenu" prefHeight="25.0" prefWidth="107.0" text="Continue" />
+      <Label fx:id="lPercentage" alignment="CENTER" layoutX="99.0" layoutY="125.0" prefHeight="17.0" prefWidth="205.0" styleClass="finish-text" text="percentage" />
+      <Label fx:id="lComment" alignment="CENTER" layoutX="6.0" layoutY="155.0" prefHeight="17.0" prefWidth="388.0" styleClass="finish-text" text="Comment" />
+      <Label fx:id="lUsername" alignment="CENTER" layoutX="99.0" layoutY="99.0" prefHeight="17.0" prefWidth="205.0" styleClass="finish-text" text="username" />
+   </children>
+</Pane>

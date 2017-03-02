@@ -1,15 +1,13 @@
 package main;
 
-import gui.MainFrame;
+import javafx.scene.control.TextInputDialog;
 import main.Factory.QuestionFactory;
 import main.Factory.UserFactory;
 
 import javax.swing.*;
 import java.awt.*;
 import java.io.*;
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.Random;
+import java.util.*;
 
 /**
  * Core class
@@ -18,17 +16,16 @@ import java.util.Random;
  * Loads data from files and saves Sessions
  * checks users answers
  *
- * @version 1.3
+ * @version 2.0
  * @author Radosław Jajko
  *
  * Created 21.12.2016
- * Updated 10.02.2017
+ * Updated 02.03.2017
  */
 public class Core implements ICore, Serializable{
 
 
     private int duration                    = 5;
-    private long reminderTime                = 5;
     private ArrayList<Integer> order        = new ArrayList<>();
 
     private Question activeQuestionSet      = QuestionFactory.createEmptyQuestion();
@@ -37,7 +34,7 @@ public class Core implements ICore, Serializable{
     private User activeUser                 = UserFactory.createUser("Test");
     private LinkedList<User> users          = new LinkedList<>();
 
-    private Timer timer;
+    private ScoresTab scoresTab             = new ScoresTab();
 
     /* Getters and setters*/
     //Duration
@@ -47,15 +44,6 @@ public class Core implements ICore, Serializable{
 
     public int getDuration(){
         return duration;
-    }
-
-    //reminderTime
-    public long getReminderTime() {
-        return reminderTime;
-    }
-
-    public void setReminderTime(long reminderTime) {
-        this.reminderTime = reminderTime;
     }
 
     //order
@@ -98,14 +86,16 @@ public class Core implements ICore, Serializable{
         return users;
     }
 
-    //timer
-    public Timer getTimer() {
-        return timer;
+    //Scores Tab
+
+    public ScoresTab getScoresTab() {
+        return scoresTab;
     }
 
-    public void setTimer(Timer timer) {
-        this.timer = timer;
+    public void setScoresTab(ScoresTab scoresTab) {
+        this.scoresTab = scoresTab;
     }
+
 
     /* Methods to control Core */
 
@@ -122,6 +112,19 @@ public class Core implements ICore, Serializable{
         }
         Random randomGenerator = new Random();
         while (order.size() < duration) {
+            int random = randomGenerator.nextInt(bound);
+            if (!order.contains(random)){
+                order.add(random);
+            }
+        }
+    }
+
+    public void generateNewOrder(int bound, int max){
+        if (order.size() != 0){
+            order.clear();
+        }
+        Random randomGenerator = new Random();
+        while (order.size() < max) {
             int random = randomGenerator.nextInt(bound);
             if (!order.contains(random)){
                 order.add(random);
@@ -229,7 +232,7 @@ public class Core implements ICore, Serializable{
     }
 
     @Override
-    public Core initialize(Core core) {
+    public Core initialize(Core core){
 
         String s = System.getProperty("file.separator"); //s - separator
 
@@ -237,7 +240,21 @@ public class Core implements ICore, Serializable{
             ObjectInputStream inputStream = new ObjectInputStream( new FileInputStream("resources"+s+"data.bin"));
             core = (Core) inputStream.readObject();
         } catch ( IOException e){
-            e.printStackTrace();
+
+            // ---- first run of an application -- //
+            TextInputDialog dialog = new TextInputDialog("Username");
+
+            dialog.setTitle("Create username");
+            dialog.setHeaderText("Welcome! Create a new user");
+            dialog.setContentText("Please enter your username:");
+
+            Optional<String> result = dialog.showAndWait();
+            if (result.isPresent()){
+                User temporary = UserFactory.createUser(result.get());
+                core.addUsers(temporary);
+                core.setActiveUser(core.getUsers().getFirst());
+                core.getActiveUser().setLastActive(new Date());
+            }
         } catch ( ClassNotFoundException e) {
             e.printStackTrace();
         }

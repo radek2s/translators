@@ -1,43 +1,33 @@
 package main;
 
-import controller.UserPanelController.Observable;
-import controller.UserPanelController.UserModelListener;
-import gui.MainFrame;
-
 import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
 import java.io.*;
 import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * User class
  * Describing simple attributes of simple user
  *
- * @version 1.3
+ * @version 2.0
  * @author Radosław Jajko
  *
  * Created 10.12.2016
- * Updated 10.02.2017
+ * Updated 02.03.2017
  */
 
-public class User implements Serializable , Observable{
+public class User implements Serializable{
 
     private String username;
     private int lastScore;
     private Date lastActive;
     private Level level;
-    private Map<Date, Integer> bestScores;
-
-    private UserModelListener listener;
 
     public User(String username){
         this.username = username;
         this.lastScore= 0;
         this.lastActive = new Date(2017,1,1);
         level = new Level();
-        bestScores = new HashMap<>();
     }
 
     public String getUsername() {
@@ -56,37 +46,10 @@ public class User implements Serializable , Observable{
 
     public void setLastActive(Date date) {
         this.lastActive = date;
-        modelChanged();
     }
 
     public Level getLevel() {
         return level;
-    }
-
-    public Map getBestScores(){
-        return bestScores;
-    }
-
-    /**
-     * ModelChanged method base on the Observer pattern
-     * when last score has changed inform listeners
-     * that userChanged
-     */
-
-    private void modelChanged(){
-        if ( listener != null ){
-            listener.userChanged();
-        }
-    }
-
-    @Override
-    public void subscribe(UserModelListener l) {
-        listener = l;
-    }
-
-    @Override
-    public void unsubscribe(UserModelListener l) {
-        listener = null;
     }
 
     /**
@@ -97,8 +60,8 @@ public class User implements Serializable , Observable{
     public void saveUser(int index){
 
         try {
-            ObjectOutputStream os = new ObjectOutputStream(new FileOutputStream(MainFrame.getCore().getUsers().get(index).getUsername()+".usr"));
-            os.writeObject(MainFrame.getCore().getUsers().get(index));
+            ObjectOutputStream os = new ObjectOutputStream(new FileOutputStream(MainFx.getCore().getUsers().get(index).getUsername()+".usr"));
+            os.writeObject(MainFx.getCore().getUsers().get(index));
         } catch ( IOException e){
             e.printStackTrace();
         }
@@ -124,7 +87,7 @@ public class User implements Serializable , Observable{
         /* Open and read User Saved data */
         try {
             ObjectInputStream is = new ObjectInputStream( new FileInputStream(selectedFile.getAbsolutePath()));
-            MainFrame.getCore().addUsers((User) is.readObject());
+            MainFx.getCore().addUsers((User) is.readObject());
         } catch (IOException | ClassNotFoundException e){
             e.printStackTrace();
         }
