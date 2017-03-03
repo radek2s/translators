@@ -19,7 +19,6 @@
 }
 .menu-button > .label{
     -fx-text-fill: white;
-    -fx-background-color: #D50000;
 }
 .menu-button > .arrow-button {
     -fx-padding: 0;
@@ -35,7 +34,7 @@
 }
 .menu-item > .label{
     -fx-text-fill: white;
-    -fx-background-color: #D50000;
+
 }
 .menu-item{
     -fx-text-fill: white;
