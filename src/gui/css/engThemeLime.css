@@ -1,0 +1,119 @@
+.root{
+    -fx-background: #F5F5F5;
+}
+.button{
+    -fx-text-fill: white;
+    -fx-background-color: #64DD17;
+
+}
+.button:hover{
+    -fx-background-color: #76FF03;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.5) , 0,0,1,1 );
+}
+.label{
+    -fx-text-fill: black;
+}
+.menu-button >{
+    -fx-text-fill: white;
+    -fx-background-color: #64DD17;
+}
+.menu-button > .label{
+    -fx-text-fill: white;
+    -fx-background-color: #64DD17;
+}
+.menu-button > .arrow-button {
+    -fx-padding: 0;
+}
+.menu-button > .arrow-button > .arrow{
+    -fx-padding: 0;
+}
+
+.menu-button:hover{
+    -fx-background-color: #76FF03;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.5) , 0,0,1,1 );
+
+}
+.menu-item > .label{
+    -fx-text-fill: white;
+    -fx-background-color: #64DD17;
+}
+.menu-item{
+    -fx-text-fill: white;
+    -fx-background-color: #64DD17;
+}
+.menu-item:hover{
+    -fx-background-color: #76FF03;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.5) , 0,0,1,1 );
+}
+.accordion{
+    -fx-background: #F5F5F5;
+}
+.titled-pane{
+    -fx-text-fill: black;
+}
+.titled-pane > .title {
+    -fx-background-color: #F5F5F5;
+}
+
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-opacity: 0;
+}
+
+.tab-pane
+{
+    -fx-tab-min-width:90px;
+}
+
+.tab{
+    -fx-background-insets: 0 1 0 1,0,0;
+}
+.tab-pane .tab
+{
+    -fx-background-color: #e6e6e6;
+
+}
+
+.tab-pane .tab:selected
+{
+    -fx-background-color: #64DD17;
+}
+
+.tab .tab-label {
+    -fx-alignment: CENTER;
+    -fx-text-fill: gray;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+.tab:selected .tab-label {
+    -fx-alignment: CENTER;
+    -fx-text-fill: white;
+}
+
+
+
+.welcome-text{
+    -fx-font-size: 15;
+    -fx-font-weight: bold;
+    -fx-text-fill: #76FF03;
+
+}
+.red-bar {
+
+    -fx-accent: #76FF03;
+}
+.welcome-text-bigger{
+
+    -fx-font-size: 25;
+    -fx-font-weight: bold;
+    -fx-text-fill: #76FF03;
+    -fx-effect: innershadow( gaussian , rgba(0,0,0,0.5) , 0,0,1,1 );
+
+}
+.finish-text{
+        -fx-font-size: 25;
+        -fx-font-weight: bold;
+        -fx-text-fill: gray;
+        -fx-effect: innershadow( gaussian , rgba(255,255,255,0.5) , 0,0,1,1 );
+
+}

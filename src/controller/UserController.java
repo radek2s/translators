@@ -1,6 +1,9 @@
 package controller;
 
-import javafx.scene.control.ProgressBar;
+import javafx.scene.control.*;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
+import javafx.stage.StageStyle;
 import main.MainFx;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
@@ -8,9 +11,6 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Label;
-import javafx.scene.control.ListView;
-import javafx.scene.control.TextField;
 import main.Factory.UserFactory;
 import main.User;
 
@@ -20,6 +20,7 @@ import java.net.URL;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Optional;
 import java.util.ResourceBundle;
 
 /**
@@ -29,6 +30,7 @@ import java.util.ResourceBundle;
  * @author Radosław Jajko
  *
  * Created 02.03.2017
+ * Updated 03.03.2017
  */
 
 public class UserController implements Initializable {
@@ -87,9 +89,19 @@ public class UserController implements Initializable {
 
     @FXML
     public void deleteUser(){
-        MainFx.getCore().getUsers().remove(selectedId);
-        items.remove(selectedId);
-        list.setItems(items);
+
+        Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+        alert.setTitle("Delete user");
+        alert.setHeaderText("Deleting user");
+        alert.setContentText("Are you sure?");
+        alert.initStyle(StageStyle.UTILITY);
+        Optional<ButtonType> result = alert.showAndWait();
+        if (result.get() == ButtonType.OK){
+            MainFx.getCore().getUsers().remove(selectedId);
+            items.remove(selectedId);
+            list.setItems(items);
+        }
+
     }
 
     @FXML

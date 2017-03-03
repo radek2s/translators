@@ -6,6 +6,7 @@ import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 
 /**
@@ -16,6 +17,7 @@ import javafx.stage.Stage;
  * @author Radosław Jajko
  *
  * Created 02.03.2017
+ * Updated 03.03.2017
  */
 
 public class MainFx extends Application {
@@ -48,7 +50,13 @@ public class MainFx extends Application {
         FXMLLoader loader = new FXMLLoader(this.getClass().getResource("/gui/fxml/MainScreen.fxml"));
         StackPane stackPane = loader.load();
         Scene scene = new Scene(stackPane);
-        scene.getStylesheets().add("/gui/css/engTheme.css");
+        if (core.getActiveStyleSheet() == null || core.getActiveStyleSheet().equals("")){
+            scene.getStylesheets().add("/gui/css/engThemeRed.css");
+            core.setActiveStyleSheet("/gui/css/engThemeRed.css");
+        } else {
+            scene.getStylesheets().add(core.getActiveStyleSheet());
+        }
+
         stage.setScene(scene);
         stage.show();
 

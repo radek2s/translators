@@ -16,6 +16,7 @@ import java.util.ResourceBundle;
  * @author Radosław Jajko
  *
  * Created 02.03.2017
+ * Updated 03.03.2017
  */
 
 public class SettingsController implements Initializable {
@@ -31,7 +32,15 @@ public class SettingsController implements Initializable {
     @FXML
     RadioButton rbDurationAll;
 
+    @FXML
+    private RadioButton rbThemeDark;
+    @FXML
+    private RadioButton rbThemeLime;
+    @FXML
+    private RadioButton rbThemeRed;
+
     ToggleGroup durationGroup;
+    ToggleGroup themeGroup;
 
     public void setMainController(MainController mainController){
         this.mainController = mainController;
@@ -53,6 +62,28 @@ public class SettingsController implements Initializable {
             MainFx.getCore().setDuration(15);
         } else {
             MainFx.getCore().setDuration(MainFx.getCore().getActiveQuestionSet().getMaxSize());
+        }
+
+    }
+
+    public void setTheme() {
+
+        String path;
+        if (rbThemeDark.isSelected()){
+            path = "/gui/css/engThemeDark.css";
+            MainFx.getCore().setActiveStyleSheet(path);
+            MainFx.getStage().getScene().getStylesheets().clear();
+            MainFx.getStage().getScene().getStylesheets().add(path);
+        } else if ( rbThemeLime.isSelected()){
+            path = "/gui/css/engThemeLime.css";
+            MainFx.getCore().setActiveStyleSheet(path);
+            MainFx.getStage().getScene().getStylesheets().clear();
+            MainFx.getStage().getScene().getStylesheets().add(path);
+        } else {
+            path = "/gui/css/engThemeRed.css";
+            MainFx.getCore().setActiveStyleSheet(path);
+            MainFx.getStage().getScene().getStylesheets().clear();
+            MainFx.getStage().getScene().getStylesheets().add(path);
         }
 
     }
@@ -93,5 +124,26 @@ public class SettingsController implements Initializable {
                 rbDurationAll.setSelected(true);
              }
         }
+
+        themeGroup = new ToggleGroup();
+        rbThemeDark.setToggleGroup(themeGroup);
+        rbThemeLime.setToggleGroup(themeGroup);
+        rbThemeRed.setToggleGroup(themeGroup);
+
+        if ( MainFx.getCore().getActiveStyleSheet().contains("Dark")) {
+            rbThemeDark.setSelected(true);
+            rbThemeLime.setSelected(false);
+            rbThemeRed.setSelected(false);
+        } else if ( MainFx.getCore().getActiveStyleSheet().contains("Lime")) {
+            rbThemeDark.setSelected(false);
+            rbThemeLime.setSelected(true);
+            rbThemeRed.setSelected(false);
+        } else {
+            rbThemeDark.setSelected(false);
+            rbThemeLime.setSelected(false);
+            rbThemeRed.setSelected(true);
+        }
+
+
     }
 }

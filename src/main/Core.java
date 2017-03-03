@@ -1,6 +1,7 @@
 package main;
 
 import javafx.scene.control.TextInputDialog;
+import javafx.stage.StageStyle;
 import main.Factory.QuestionFactory;
 import main.Factory.UserFactory;
 
@@ -20,7 +21,7 @@ import java.util.*;
  * @author Radosław Jajko
  *
  * Created 21.12.2016
- * Updated 02.03.2017
+ * Updated 03.03.2017
  */
 public class Core implements ICore, Serializable{
 
@@ -35,6 +36,7 @@ public class Core implements ICore, Serializable{
     private LinkedList<User> users          = new LinkedList<>();
 
     private ScoresTab scoresTab             = new ScoresTab();
+    private String activeStyleSheet         = new String();
 
     /* Getters and setters*/
     //Duration
@@ -95,6 +97,15 @@ public class Core implements ICore, Serializable{
     public void setScoresTab(ScoresTab scoresTab) {
         this.scoresTab = scoresTab;
     }
+
+    public void setActiveStyleSheet(String css){
+        this.activeStyleSheet = css;
+    }
+
+    public String getActiveStyleSheet() {
+        return activeStyleSheet;
+    }
+
 
 
     /* Methods to control Core */
@@ -247,7 +258,7 @@ public class Core implements ICore, Serializable{
             dialog.setTitle("Create username");
             dialog.setHeaderText("Welcome! Create a new user");
             dialog.setContentText("Please enter your username:");
-
+            dialog.initStyle(StageStyle.UTILITY);
             Optional<String> result = dialog.showAndWait();
             if (result.isPresent()){
                 User temporary = UserFactory.createUser(result.get());
